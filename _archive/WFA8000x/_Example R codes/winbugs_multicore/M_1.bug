@@ -1,0 +1,8 @@
+model
+{
+    for (i in 1:300) {
+        Y[i] ~ dnorm(mu, precision)
+    }
+    mu ~ dnorm(0.00000E+00, 1.00000E-04)
+    precision ~ dgamma(0.01, 0.01)
+}

@@ -1,0 +1,20 @@
+---
+title: "WFA48000 Research Credits"
+output: 
+  html_document:
+    includes:
+      after_body: _includes/include_footer-no-disqus.html
+      in_header: _includes/header_banner.html 
+---
+
+<!--
+library(knitr)
+rmarkdown::render_site("literature.Rmd")# build website
+rmarkdown::render_site()# build website
+-->
+
+
+# Literature
+
+
+* 

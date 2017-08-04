@@ -1,0 +1,28 @@
+---
+title: ""
+---
+
+<!--
+
+library(knitr)
+rmarkdown::render_site("index.Rmd")# build webpage
+
+# rmarkdown::render_site()# build webpage
+-->
+
+* First release of mlrMBO – the toolbox for (Bayesian) Black-Box Optimization https://www.r-bloggers.com/first-release-of-mlrmbo-the-toolbox-for-bayesian-black-box-optimization/
+* Reinforcement Learning in R https://www.r-bloggers.com/reinforcement-learning-in-r-2/
+* Optimization and Operations Research in R http://www.rblog.uni-freiburg.de/2017/02/17/optimization-and-operations-research-in-r/
+
+GitHub
+* http://www.chronicle.com/blogs/profhacker/tag/github101
+
+Mentoring plans
+* https://dynamicecology.wordpress.com/2017/01/09/mentoring-plans-a-really-useful-tool-for-pis-and-their-lab-members/
+
+* Data management for complete beginners http://evol-eco.blogspot.com/2017/03/data-management-for-complete-beginners.html
+
+* The Four Keys to Effective Practice http://lifehacker.com/the-four-keys-to-effective-practice-1792901493
+
+* Create SMART Quarterly Goals With This Three-Step System http://lifehacker.com/create-smart-quarterly-goals-with-this-three-step-syste-1792873175
+

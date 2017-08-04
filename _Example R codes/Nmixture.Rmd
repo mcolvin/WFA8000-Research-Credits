@@ -1,0 +1,123 @@
+---
+title: "Evaluating using spatial rather than temporal replicates in N mixture models"
+author: "Michael E. Colvin"
+date: "Friday, October 16, 2015"
+output: html_document
+---
+
+
+```{r}
+library(unmarked)
+?pcount
+
+```
+
+First let simulate some data that is similar to what you collected over the 4 years of the study.  I took some liberties in associations of data.
+
+
+```{r}
+# Simulate data
+set.seed(1234)# SO YOU CAN REPLICATE THIS
+
+Nwetlands<- 35
+Nvisits<- 17 # number of visits to each wetland each year
+Nyears<- 4 # number years of the study
+
+# DETECTION COVARIATES
+observers<- c('mk',"thing1","thing2")
+
+# ABUNDANCE COVARIATES
+## TIME VARYING
+salinity<- runif(Nvisits*Nyears*Nwetlands, 0,100000)# salnity in ppm
+salinity<- matrix(salinity, Nwetlands*Nyears, Nvisits)
+## WETLAND LEVEL
+area<- runif(Nwetlands, 10,300)
+area<- area[sort(rep(c(1:Nwetlands),Nyears))]
+```
+
+## Abundance
+
+```{r}
+B0_salinity<- 0.01
+B1_salinity<- 0.002
+lambda <- exp(beta0 + beta1*x)   # expected counts at each site
+N <- rpois(nSites, lambda)       # latent abundance
+
+
+```
+
+## Detection
+Next step is to set up the detection probabilities.  Here I am going to make a matrix of detecton pr
+
+```{r}
+y <- matrix(NA, Nwetlands*Nyears, Nvisits)
+# detection prob for each visit, assumes p is constant among sites during visits
+
+p <- c(0.3, 0.6, 0.8) 
+for(i in 1:Nwetlands*Nyears)
+    {
+  for(j in 1:nVisits) 
+      {
+      y[,j] <- rbinom(nSites, N, p[i,j])
+      }
+  }
+```
+
+```{r}
+# Organize data
+visitMat <- matrix(as.character(1:nVisits), nSites, nVisits, byrow=TRUE)
+
+umf <- unmarkedFramePCount(y=y, siteCovs=data.frame(x=x),
+    obsCovs=list(visit=visitMat))
+summary(umf)
+```
+
+```{r}
+# Fit a model
+fm1 <- pcount(~visit-1 ~ x, umf, K=50)
+fm1
+
+plogis(coef(fm1, type="det")) # Should be close to p
+
+```
+
+
+
+
+
+nSites <- 100
+nVisits <- 3
+x <- rnorm(nSites)               # a covariate
+beta0 <- 0
+beta1 <- 1
+lambda <- exp(beta0 + beta1*x)   # expected counts at each site
+N <- rpois(nSites, lambda)       # latent abundance
+y <- matrix(NA, nSites, nVisits)
+p <- c(0.3, 0.6, 0.8)            # detection prob for each visit
+for(j in 1:nVisits) {
+  y[,j] <- rbinom(nSites, N, p[j])
+  }
+
+# Organize data
+visitMat <- matrix(as.character(1:nVisits), nSites, nVisits, byrow=TRUE)
+
+umf <- unmarkedFramePCount(y=y, siteCovs=data.frame(x=x),
+    obsCovs=list(visit=visitMat))
+summary(umf)
+
+# Fit a model
+fm1 <- pcount(~visit-1 ~ x, umf, K=50)
+fm1
+
+plogis(coef(fm1, type="det")) # Should be close to p
+
+
+# Empirical Bayes estimation of random effects
+(fm1re <- ranef(fm1))
+plot(fm1re, subset=site %in% 1:25, xlim=c(-1,40))
+sum(bup(fm1re))         # Estimated population size
+sum(N)                  # Actual population size
+
+
+
+````

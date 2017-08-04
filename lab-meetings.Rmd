@@ -1,0 +1,26 @@
+---
+title: "WFA48000 Research Credits"
+output: 
+  html_document:
+    includes:
+      after_body: _includes/include_footer-no-disqus.html
+      in_header: _includes/header_banner.html 
+---
+
+
+<!--
+
+library(knitr)
+rmarkdown::render_site("index.Rmd")# build webpage
+
+# rmarkdown::render_site()# build webpage
+
+
+Ideas
+* Dissect abstracts and make a how to student angle?
+    * [Neat link](https://bakercatherine.wordpress.com/2017/03/15/how-to-write-a-conference-abstract-a-five-part-plan-for-pitching-your-research-at-almost-anything/)
+-->
+
+## Lab meetings
+
+* Materials from meeting on March 10th, 2017 are [here](2010310-lm.hmtl)

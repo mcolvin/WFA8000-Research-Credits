@@ -1,0 +1,19 @@
+---
+title: ""
+---
+
+<!--
+
+library(knitr)
+rmarkdown::render_site("index.Rmd")# build webpage
+
+# rmarkdown::render_site(quiet=TRUE)# build webpage
+
+-->
+
+## Stuff
+
+* Here's a simple trick to achieve your long-term 
+goals[here](long-term-goals.pdf) Source: 
+http://alifeofproductivity.com/a-simple-trick-to-achieve-long-term-goals) 
+

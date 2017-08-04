@@ -1,0 +1,23 @@
+name: "wfa8433"
+navbar:
+  title: "Course home"
+  left:
+    - text: "Course information"
+      menu:
+        - text: "Course home"
+          href: "index.html"      
+        - text: "Course Syllabus"
+          href: "8000-Syllabus.html"
+    - text: "Resources & Lab meetings"
+      menu: 
+        - text: "Lab meetings"
+          href: "lab-meetings.html"
+        - text: "General Reading"
+          href: "general-reading.html"
+        - text: "R tutorials"
+          href: "R-tutorials.html"
+output_dir: "docs"
+output:
+  html_document:
+    theme: cosmo
+    highlight: textmate

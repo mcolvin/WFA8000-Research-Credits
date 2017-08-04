@@ -1,0 +1,49 @@
+---
+title: "WFA48000 Research Credits"
+output: 
+  html_document:
+    includes:
+      after_body: _includes/include_footer-no-disqus.html
+      in_header: _includes/header_banner.html 
+---
+
+
+# Why use a data management system?
+
+* Confidence in YOUR data
+    * Makes you think about the data you will be collecting (integers, singles, double, text)
+    * Limits redundant data entries minimized data entry errors
+    * Non-redundant data entries makes correcting data entry errors easier (i.e., manual error)
+    * Standardization of data formats among years (easier synthesis for multi year projects)
+* Easily create and save data queries for:
+    * cooperators and collaborators (gotta share with your friends)
+    * Legality (freedom of information)
+* Easily create queries that can be reused annually
+    * take/disposition reports for permitting agencies
+    * mortality reports
+    * IACUC/ACUP report numbers (How many critters do I have left before I need to amend?)
+* Allowing you to have everything is ready to go for next site, season, and/or year
+    * Multiple year studies
+    * Standardization of data formats among years (easier synthesis)
+    * Data entry forms
+    * Data reports
+* Data archival:  create text file to stand the test of time and make your adviser happy...
+* File ambiguity: how many times have you tried to remember how you created a table in excel? found a file that contained the term 'do not use' in the file name?
+
+
+media/bad-excel.png
+
+data-sheet.png
+
+redundant-data.png
+relational-data.png
+data-types.png
+
+
+# Queries
+
+* Making
+* Subsetting
+* Calculations
+* Summary
+* Cross tab queries

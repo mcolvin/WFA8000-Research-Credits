@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0120)file:///C:/Users/colvinm/Documents/Classes/2013/FW%20599%20intro%20to%20data%20and%20R/Week%209%20Materials/answers.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <meta name="generator" content="pandoc">
+  <title></title>
+  <style type="text/css">
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; }
+code > span.dt { color: #902000; }
+code > span.dv { color: #40a070; }
+code > span.bn { color: #40a070; }
+code > span.fl { color: #40a070; }
+code > span.ch { color: #4070a0; }
+code > span.st { color: #4070a0; }
+code > span.co { color: #60a0b0; font-style: italic; }
+code > span.ot { color: #007020; }
+code > span.al { color: #ff0000; font-weight: bold; }
+code > span.fu { color: #06287e; }
+code > span.er { color: #ff0000; font-weight: bold; }
+  </style>
+  <link rel="stylesheet" href="./answers_files/markdown.css" type="text/css">
+</head>
+<body>
+<h1 id="week-9-answers-for-optional-homework">Week 9 answers for optional homework</h1>
+<h2 id="exercise-1">Exercise 1</h2>
+<p>Code to simulate the population dynamics.</p>
+<pre class="sourceCode r"><code class="sourceCode r">N0 &lt;- <span class="dv">6</span>
+r &lt;- <span class="fl">0.15</span>
+nyears &lt;- <span class="dv">100</span>
+K &lt;- <span class="dv">49</span>
+N &lt;- <span class="kw">rep</span>(<span class="ot">NA</span>, nyears)
+N[<span class="dv">1</span>] &lt;- N0
+for (i in <span class="dv">1</span>:(nyears - <span class="dv">1</span>)) {
+    N[i + <span class="dv">1</span>] &lt;- r * N[i] * ((K - N[i])/K) + N[i]
+}
+N</code></pre>
+<pre><code>##   [1]  6.000  6.790  7.667  8.637  9.704 10.872 12.141 13.511 14.979 16.538
+##  [11] 18.182 19.897 21.670 23.483 25.317 27.153 28.969 30.745 32.463 34.106
+##  [21] 35.661 37.118 38.468 39.708 40.838 41.858 42.773 43.588 44.311 44.947
+##  [31] 45.504 45.991 46.415 46.782 47.100 47.374 47.610 47.812 47.986 48.135
+##  [41] 48.262 48.371 48.465 48.544 48.612 48.670 48.719 48.761 48.796 48.827
+##  [51] 48.853 48.875 48.893 48.909 48.923 48.935 48.944 48.953 48.960 48.966
+##  [61] 48.971 48.975 48.979 48.982 48.985 48.987 48.989 48.991 48.992 48.993
+##  [71] 48.994 48.995 48.996 48.996 48.997 48.997 48.998 48.998 48.998 48.999
+##  [81] 48.999 48.999 48.999 48.999 48.999 48.999 49.000 49.000 49.000 49.000
+##  [91] 49.000 49.000 49.000 49.000 49.000 49.000 49.000 49.000 49.000 49.000</code></pre>
+<p>The population at year = 89 is <code>49</code>.</p>
+<p>Here is how one could plot it out. There is a gem of some code in there for people that might need to add some superscripts to the plot label....</p>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plot</span>(<span class="kw">c</span>(<span class="dv">1</span>:<span class="dv">100</span>), N, <span class="dt">type =</span> <span class="st">"b"</span>, <span class="dt">las =</span> <span class="dv">1</span>, <span class="dt">xlab =</span> <span class="st">"Years"</span>, <span class="dt">ylab =</span> <span class="kw">expression</span>(<span class="kw">paste</span>(<span class="st">"Plants hectares"</span><span class="er">^-</span><span class="dv">1</span>, 
+    <span class="dt">sep =</span> <span class="st">""</span>)))</code></pre>
+<div class="figure">
+<img src="./answers_files/unnamed-chunk-2.png" alt="Figure 1. Simulated plant density for a 100 year period."><p class="caption">Figure 1. Simulated plant density for a 100 year period.</p>
+</div>
+<h2 id="exercise-2">Exercise 2</h2>
+<p>Code to simulate the population dynamics for 10 years with 10 replicates.</p>
+<pre class="sourceCode r"><code class="sourceCode r">N0 &lt;- <span class="dv">6</span>
+r &lt;- <span class="fl">0.15</span>
+nyears &lt;- <span class="dv">10</span>
+nreps&lt;- <span class="dv">10</span>
+K &lt;- <span class="dv">49</span>
+N &lt;- <span class="kw">matrix</span>(<span class="ot">NA</span>, <span class="dt">nrow=</span>nyears, <span class="dt">ncol=</span>nreps)
+N[<span class="dv">1</span>,] &lt;- N0
+for(j in <span class="dv">1</span>:nreps)<span class="co"># for the 10 replicates</span>
+    {
+    for (i in <span class="dv">1</span>:(nyears<span class="dv">-1</span>)) <span class="co"># note the -1 since we are using i+1 on the left hand side</span>
+        {
+        N[i + <span class="dv">1</span>,j] &lt;- (r * N[i,j] * ((K - N[i,j])/K) + N[i,j])+<span class="kw">rnorm</span>(<span class="dv">1</span>,<span class="dv">0</span>,<span class="dv">1</span>)
+        }
+    }
+N<span class="co"># each column is a replicate</span></code></pre>
+<pre><code>##         [,1]   [,2]   [,3]   [,4]   [,5]   [,6]   [,7]   [,8]  [,9]  [,10]
+##  [1,]  6.000  6.000  6.000  6.000  6.000  6.000  6.000  6.000 6.000  6.000
+##  [2,]  6.322  5.632  8.524  6.523  7.201  7.750  5.040  5.770 6.000  7.603
+##  [3,]  7.883  8.263 10.285  7.867  6.997  9.706  5.343  7.126 6.477  9.760
+##  [4,]  8.082  8.458 10.576  9.452  6.824 12.815  6.351  8.577 6.867 11.538
+##  [5,]  8.007 10.317 12.101 11.903  8.069 14.217  7.241  9.492 7.786 12.022
+##  [6,]  9.154 12.084 13.533 14.212  9.935 15.302  7.455  8.500 8.711 11.842
+##  [7,] 10.702 12.699 14.336 15.605 10.473 15.150  8.053  9.974 7.551 13.696
+##  [8,] 13.218 13.598 17.991 18.098 11.305 15.002  9.323 11.469 7.732 14.698
+##  [9,] 15.161 15.517 19.644 21.037 14.116 16.747 11.273 12.426 7.255 15.121
+## [10,] 17.319 18.282 20.800 23.633 17.512 18.595 13.801 13.381 7.966 15.048</code></pre>
+<p>Here is how we could go about plotting it.</p>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plot</span>(<span class="kw">c</span>(<span class="dv">1</span>:<span class="dv">10</span>), <span class="kw">rep</span>(<span class="dv">49</span>, <span class="dv">10</span>), <span class="dt">type =</span> <span class="st">"n"</span>, <span class="dt">las =</span> <span class="dv">1</span>, <span class="dt">xlab =</span> <span class="st">"Years"</span>, <span class="dt">ylab =</span> <span class="kw">expression</span>(<span class="kw">paste</span>(<span class="st">"Plants hectares"</span><span class="er">^-</span><span class="dv">1</span>, 
+    <span class="dt">sep =</span> <span class="st">""</span>)), <span class="dt">ylim =</span> <span class="kw">c</span>(<span class="dv">0</span>, <span class="dv">50</span>))
+for (i in <span class="dv">1</span>:<span class="dv">10</span>) {
+    <span class="kw">points</span>(<span class="kw">c</span>(<span class="dv">1</span>:<span class="dv">10</span>), N[, i], <span class="dt">type =</span> <span class="st">"b"</span>, <span class="dt">col =</span> i)
+}</code></pre>
+<div class="figure">
+<img src="./answers_files/unnamed-chunk-4.png" alt="Figure 2. Simulated plant density for a 10 year period for 10 stochastic replicates."><p class="caption">Figure 2. Simulated plant density for a 10 year period for 10 stochastic replicates.</p>
+</div>
+
+
+</body></html>

@@ -1,0 +1,133 @@
+---
+title: "FW4133 Fisheries Science: Class 2"
+author: "Michael E. Colvin"
+date: "Wednesday, November 19, 2014"
+output: slidy_presentation
+---
+<!-- comment --> 
+## Last Class
+
+askljalskdjfalskdjf
+
+
+## This class
+
+
+## Next class
+
+<!-- Intrinsic growth rate --> 
+
+## What if annual rates vary over time?
+
+<center>
+Time (years)|Gains (fish year<sup>-1</sup>)|Losses (fish year<sup>-1</sup>)
+:-------------: | :-------------: | :-------------:
+1|2|2
+2|3|3
+3|4|9
+4|6|5
+5|8|4
+6|9|1
+7|12|2
+8|4|5
+9|1|6
+10|6|4
+</center>
+
+## What if annual rates vary over time?
+
+<center>
+Time (years)|Gains (fish year<sup>-1</sup>)|Losses (fish year<sup>-1</sup>)|Net (fish year-1)
+:-------------: | :-------------: | :-------------: | :-------------:
+1|2|2|0
+2|3|3|0
+3|4|9|-5
+4|6|5|1
+5|8|4|4
+6|9|1|8
+7|12|2|10
+8|4|5|-1
+9|1|6|-5
+10|6|4|2
+</center>
+
+## Team exercise
+* Demonstrate that when gains and losses vary among years that average gets you to the same place?
+* Do as a table exercise 
+* Then run in STELLA to confirm
+* Objective- to set the stage for population dependent rates.
+* Have them run out dynamics that go negative.
+
+## Intrinsic growth rate
+
+Balance of gains and losses
+
+Gains-losses=intrinsic growth rate..
+
+## Team exercise
+* Spreadsheet exercise
+* Calculate what the intrinsic growht rate is 
+* Forecast over 10 years. goes negative!
+* Have a population that goes negative
+* Scratcher
+
+<!-- Dependent gains and losses --> 
+
+## Exponential population model
+$$ \frac{dB}{dt}=r \cdot b $$
+
+## Assumptions
+$$ \frac{dB}{dt}=r \cdot b $$
+
+* Growth rate versus abundance
+* dB increases with B
+
+## Biologically reasonable?
+* dA/dt/B increases with B
+* Team exercise-
+
+## Population limits?
+* What?  Why. habitat
+
+## Carrying capacity
+* Resources limitation.. Could be habitat, could be food, could be.
+
+## Team exercise
+* What could limit the Biomass of a population?
+* Abundance?
+
+<!-- Logistic model --> 
+
+## Graham-Schaefer model
+Plot of dynamics over tim
+
+$$ \frac{dB}{dt}=r \cdot b \cdot \frac{K-B}{K} $$
+
+## Graham-Schaefer model
+Insert box and flow diagram
+
+$$ \frac{dB}{dt}=r \cdot b \cdot \frac{K-B}{K} $$
+
+## Assumptions
+* Plot of per capita growth versus abundance+
+* Fox
+* Pella-Tomlison
+
+## Team exercise
+* ????
+
+## Adding harvest
+
+## Surplus production
+* Compensatory growth
+
+
+<!-- For next time --> 
+
+## Next class
+<img src="media/murky.jpg" alt="Murkiest point" style="width: 100%;"/>
+
+
+
+
+

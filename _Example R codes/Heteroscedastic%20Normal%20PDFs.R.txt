@@ -1,0 +1,50 @@
+#################################################################
+#
+#          Likelihood Methods in Ecology
+#
+#  Lab 3 - Probability Density Functions as Likelihood Functions
+#
+#################################################################
+
+
+################################################################
+#
+#  Allowing for non-homogeneous variances in the normal PDF
+#
+#
+################################################################
+
+#
+#  In many ecological datasets, the variance is not constant across
+#    the range of observations
+#
+#  In traditional frequentist tests, you would typically use some
+#    sort of transformation of your data to achieve both normality
+#    and a homogeneous variance 
+#
+#  But this is a pain in the neck for many reasons, and it is a simple matter
+#    to adapt your likelihood function (i.e. the PDF) to your data, rather than 
+#    vice versa
+
+############  Example:  normal pdf with a standard deviation that is (linearly) proportional
+#                       to the mean
+#
+
+prop_var_norm_pdf <- function(x,mean,delta,log=FALSE)
+{ sd <- delta*mean        #standard deviation is a linear function of the mean (with a zero intercept)
+  dnorm(x,mean,sd,log)
+}
+
+####  This can be generalized with any equation for the sd term that makes sense for your data
+
+#####  Another example:  separate variances for different treatment groups
+
+# in this example, before calling the function, you would have defined
+#   "stdev" as a vector of length = the number of groups
+#   and "group" is a factor containing the group code 
+
+sep_var_norm_pdf <- function(x,mean,stdev,group,log=FALSE)
+{ sd <- stdev[group]
+  dnorm(x,mean,sd,log)
+}
+

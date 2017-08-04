@@ -1,5 +1,5 @@
 ---
-title: "WFA4313/6313 Fisheries Management"
+title: "WFA48000 Research Credits"
 output: 
   html_document:
     includes:
@@ -13,9 +13,12 @@ rmarkdown::render_site("index.Rmd")# build website
 rmarkdown::render_site()# build website
 -->
 
-# Course announcements
 
-* Welcome to class! 
-    * You can see the course schedule [here](schedule.html) and syllabus [here](syllabus.html). 
-    * We will not have class next week due to the Annual AFS meeting in Tampa.
+# Welcome
+
+Welcome to the content for lab and research operations for
+students enrolled in research credits and postdoctoral research
+associates. Within this site are numerous resources for varying
+topics intended to provide useful additional information that 
+may be useful in your professional development.
 

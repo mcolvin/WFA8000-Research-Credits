@@ -1,0 +1,59 @@
+model{
+  # i indexes total number of rows
+  for (i in 1:ROWS) {
+    
+         ##Site occupancy modeled as function of randomly varining intercept 
+
+                logit(psi0[i]) <- alpha0 + alpha1*X[i,4]
+
+          ## This it helps keeps the program in track
+             psi[i]<-max(0.00001,min(0.99999, psi0[i]))
+               w[i] ~ dbern(psi[i])
+               
+   ## Habitat unit occupancy modeled as a constant
+     logit(unit_psi0[i]) <- gamma0 + gamma1*X[i,5] + gamma2*X[i,6]
+
+          ## This helps keeps the program in track
+               unit_psi[i]<-max(0.00001,min(0.99999, unit_psi0[i]))*w[i]
+               u[i] ~ dbern(unit_psi[i])
+               u1[i] <- u[i] + 1               
+
+   ## h indexes number of replicate samples per habitat unit
+   for (h in 1:K) {     
+
+     ## detection modeled as a constant ( the intercept beta0)
+
+                     logit(theta[i,h,2]) <- beta0 
+
+                     # Species not present set detection to zero
+                     theta[i,h,1] <- 0
+
+                     X[i,h] ~ dbern(theta[i,h,u1[i]])
+                     }
+
+               }
+
+   ## define prior distributions for model parameters
+   ## here is the random effect corresponding to species detetection heterogeneity rendom effect
+ 
+  
+ ###  GET PREDICTED VALUES FOR UNIT OCCUPANCY AND DETECTION
+logit(pred_pool) <- gamma0 + gamma1
+logit(pred_riffle) <- gamma0 + gamma2
+logit(pred_run) <- gamma0
+logit(pred_site) <- alpha0 + alpha1*1.5
+logit(pred_det) <- beta0 
+
+######## This is where you specify prior distributions for parameters for
+######## the detection and occupancy models. 
+ 
+ alpha0 ~ dnorm(0, 0.37)
+ alpha1 ~ dnorm(0, 0.37)
+ beta0 ~ dnorm(0, 0.37)
+gamma0 ~ dnorm(0, 0.37)
+gamma1 ~ dnorm(0, 0.37)
+gamma2 ~ dnorm(0, 0.37)
+
+}
+
+list(alpha0 = 0.1, alpha1=0,gamma0=0.1,gamma1=0.1,gamma2 = 0)

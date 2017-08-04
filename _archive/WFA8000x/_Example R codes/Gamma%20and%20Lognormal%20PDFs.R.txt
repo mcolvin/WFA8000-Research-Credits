@@ -1,0 +1,159 @@
+#################################################################
+#
+#          Likelihood Methods in Ecology
+#
+#  Lab 3 - Probability Density Functions as Likelihood Functions
+#
+#################################################################
+
+
+################################################################
+#
+#  Likelihood functions for skewed data - the Gamma and Lognormal PDFs
+#
+#
+################################################################
+
+
+############################
+#
+#  The Gamma PDF
+#
+############################
+
+#  The Gamma PDF in R (dgamma) is parameterized in terms 
+#     of "shape" and "scale",
+#     where shape = mean/scale 
+#     So, again, it is simple to write a modified version in 
+#     terms of the mean and scale
+
+gamma_pdf <- function(x,mean,scale,log=FALSE)
+{ shape = mean/scale
+  dgamma(x,shape=shape,scale=scale,log)
+}
+
+
+
+# Plot the gamma
+x <- seq(0,100,1)
+mean = 10
+scale = 5
+shape <- mean/scale
+y1 <- dgamma(x,shape=shape,scale=scale,log=F)
+windows()
+plot(x,y1,type="l",lwd=3,cex.main = 1.5, cex.lab = 1.5,pch=19,col=1,xlab="x",
+   ylab="P(x)", main = "Gamma PDF")
+text(25,0.05,paste("scale =",scale),cex=1.25)
+
+mean = 20
+shape <- mean/scale
+y2 <- dgamma(x,shape=shape,scale=scale,log=F)
+lines(x,y2,lwd=3,col=2)
+
+mean = 50
+shape <- mean/scale
+y3 <- dgamma(x,shape=shape,scale=scale,log=F)
+lines(x,y3,lwd=3,col=3)
+
+mean = 80
+shape <- mean/scale
+y4 <- dgamma(x,shape=shape,scale=scale,log=F)
+lines(x,y4,lwd=3,col=4)
+
+leg <- c("mean = 10","mean = 20","mean = 50","mean = 80")
+legend("topright", legend=leg, cex=1.5, lty=1,lwd=3, col=1:4)
+
+#
+#  try this with different values of the scale (dispersion) parameter
+#
+#  what happens if mean is < scale (i.e. if shape is < 1)?
+#
+#  how could you cope with this and still have the function behave like a true PDF?
+#
+
+
+######################################
+#
+#   The Lognormal PDF (dlnorm)
+#
+######################################
+#
+# the dlnorm function in R is in units of mean and variance of the logarithms
+#  
+# this isn't very useful if you want a model that predicts mean in your original units, but
+#   you can fix this by writing a simple "wrapper" that wraps the dlnorm function in your own
+#   terms
+
+lnorm_pdf <- function(x,mean,sdlog,log=FALSE)   # x is the vector of observations, in the non-log units
+{ meanlog <- log(mean)- (sdlog^2/2)             # mean is also in non-log units, but I have left
+  dlnorm(x,meanlog,sdlog,log)                   # the dispersion parameter (sdlog) on a log scale
+}
+
+#  now, generate plots of the PDF with different values of the mean
+x <- seq(0,100,1)
+
+sdlog <- 1
+
+mean = 10
+y1 <- lnorm_pdf(x,mean,sdlog)
+windows()
+plot(x,y1,type="l",lwd=3,cex.main = 1.5, cex.lab = 1.5,pch=19,col=1,xlab="x",
+   ylab="P(x)", main = "Lognormal PDF, with mean in non-log units")
+text(20,0.1,paste("sdlog =",sdlog),cex=1.5)
+
+mean = 20
+y2 <- lnorm_pdf(x,mean,sdlog)
+lines(x,y2,lwd=3,col=2)
+
+mean = 50
+y3 <- lnorm_pdf(x,mean,sdlog)
+lines(x,y3,lwd=3,col=3)
+
+mean = 80
+y4 <- lnorm_pdf(x,mean,sdlog)
+lines(x,y4,lwd=3,col=4)
+
+leg <- c("mean = 10","mean = 20","mean = 50","mean = 80")
+legend("topright", legend=leg, cex=1.0, lty=1,lwd=3, col=1:4)
+
+#####
+#
+#  Compare the lognormal and gamma PDFs - while both are asymmetric, they differ
+#    pretty dramatically in their shapes, particularly at low observed values  - 
+#
+#    in particular, what is Prob(x=0) under the lognormal PDF?
+#
+#####
+
+
+
+### Lognormal PDF with parameters in log units
+x <- seq(0,10,0.1)
+
+sdlog <- 0.4
+
+mean = 1
+y1 <- dlnorm(x,mean,sdlog)
+windows()
+plot(x,y1,type="l",lwd=3,cex.main = 1.5, cex.lab = 1.5,pch=19,col=1,xlab="x",
+   ylab="P(x)", main = "Lognormal PDF in log units")
+
+mean = 2
+y2 <- dlnorm(x,mean,sdlog)
+lines(x,y2,lwd=3,col=2)
+
+mean = 3
+y3 <- dlnorm(x,mean,sdlog)
+lines(x,y3,lwd=3,col=3)
+
+mean = 4
+y4 <- dlnorm(x,mean,sdlog)
+lines(x,y4,lwd=3,col=4)
+
+leg <- c("mean = 1","mean = 2","mean = 3","mean = 4")
+legend("topright", legend=leg, cex=1.0, lty=1,lwd=3, col=1:4)
+
+
+
+
+

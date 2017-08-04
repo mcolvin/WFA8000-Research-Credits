@@ -1,0 +1,26 @@
+
+
+# Load the workspace (containing the function).
+
+connection <- url("http://www.unt.edu/rss/class/Jon/cards/CardsWkspace_001.RData")
+load(connection)
+rm(connection)
+
+
+# See what the function does.....
+
+blackjack(players = 10, decks = 2)
+
+blackjack(players = 2, decks = 10)
+
+
+
+blackjack(players = 7, decks = 8)
+
+blackjack(players = 1, decks = 1)
+
+
+
+
+
+

@@ -1,0 +1,166 @@
+#################################################################
+#
+#                Likelihood Methods in Ecology
+#
+#  Lab 3 - Probability Density Functions as Likelihood Functions
+#
+#################################################################
+
+
+################################################################
+#
+#            Likelihood functions for count data:
+#
+#           the Poisson and Negative Binomial PDFs
+#
+#           (and Zero-Inflated extensions of those)
+#
+################################################################
+
+
+################################################################
+#
+#  The Poisson PDF  (dpois)
+#
+################################################################
+
+#  The Poisson is a classic PDF for count data
+#  It has the unique property that the variance is equal to the mean
+#
+#  What will this mean for a graph of observed vs. predicted?
+#
+
+x <- seq(0,50,1)
+mean = 1
+y1 <- dpois(x,mean)
+windows()
+plot(x,y1,type="l",lwd=3,cex.main = 1.5, cex.lab = 1.5,pch=19,col=1,xlab="x",
+   ylab="P(x)", main = "Poisson PDF")
+
+mean = 5
+y2 <- dpois(x,mean)
+lines(x,y2,lwd=3,col=2)
+
+mean = 10
+y3 <- dpois(x,mean)
+lines(x,y3,lwd=3,col=3)
+
+mean = 30
+y4 <- dpois(x,mean)
+lines(x,y4,lwd=3,col=4)
+
+leg <- c("mean = 1","mean = 5","mean = 10","mean = 30")
+legend("topright", legend=leg, cex=1.5, lty=1,lwd=3, col=1:4)
+
+#  for data in which the observed values were relatively large,
+#    could you use a normal PDF (with proportional variance) to
+#    approximate the Poisson?
+
+
+
+################################################################
+#
+#  The Negative Binomial PDF  (dnbinom)
+#
+################################################################
+
+#  The Poisson is essentially a special case of the more general
+#    negative binomial PDF
+#
+#  In the negative binomial, the variance is not fixed equal to the 
+#     mean, but varies with the mean as a function of an additional
+#     dispersion parameter ("size")      (size > 0)
+#
+#  The variance is then:  var(x) = mean + mean^2/size
+#
+#  So, the amount of overdispersion (i.e. the degree to which the variance is
+#     greater than the mean) decreases as "size" increases
+#
+#  If the size parameter is large, then the negative binomial is approximated by a Poisson
+#
+#  The negative binomial is particularly appropriate for "over-dispersed" data 
+#     in which the variance increases faster than the mean
+#
+#  The dnbinom function in R has several different forms.  For use as a likelihood
+#     function, you would generally use the form:
+#
+#     dnbinom(x,size,mu,log=TRUE)    where "mu" is the mean...
+#
+
+x <- seq(0,50,1)
+
+size = 1
+
+mean = 1
+y1 <- dnbinom(x,size,mu=mean)
+windows()
+plot(x,y1,type="l",lwd=3,cex.main = 1.5, cex.lab = 1.5,pch=19,col=1,xlab="x",
+   ylab="P(x)", main = "Negative Binomial PDF")
+text(25,0.05,paste("size =",size),cex=1.25)
+
+mean = 5
+y2 <- dnbinom(x,size,mu=mean)
+lines(x,y2,lwd=3,col=2)
+
+mean = 10
+y3 <- dnbinom(x,size,mu=mean)
+lines(x,y3,lwd=3,col=3)
+
+mean = 30
+y4 <- dnbinom(x,size,mu=mean)
+lines(x,y4,lwd=3,col=4)
+
+leg <- c("mean = 1","mean = 5","mean = 10","mean = 30")
+legend("topright", legend=leg, cex=1.5, lty=1,lwd=3, col=1:4)
+
+#  so, when size is small, this is very different than the Poisson 
+#
+#  What does the function imply if mean = 30 and size = 1 (i.e. highly over-dispersed
+#     data and high expected mean)?
+#
+#  compare this with a graph where "size" is larger  (i.e. much less over-dispersion)
+
+
+################################################################
+#
+#                      Zero-Inflated PDFs
+#
+################################################################
+
+#  Zero-inflated data are a unique type of over-dispersed data
+#    that are more properly thought of as a "mixture" of two parts
+#     (1) a traditional PDF, and
+#     (2) an additional term that specifies the probability of 
+#           observing a zero, over and above the probability expected
+#           under the traditional PDF
+
+#  What sorts of processes might generate zero-inflated data?
+
+#################################################################
+#
+#  Examples (note that all of these return a log-likelihood)
+#
+#################################################################
+
+# ZERO INFLATED POISSON PDF
+zinf_poisson_pdf <- function(x,mean,pz,log=FALSE)
+{  log(ifelse(x==0,pz + (1-pz)*dpois(0,mean,log=F),
+        (1-pz)*dpois(x,mean,log=F)))
+
+# ZERO INFLATED NORMAL PDF
+zinf_norm_PDF <- function(x,mean,sd,pz)
+{  log(ifelse(x==0,pz + (1-pz)*dnorm(0,mean,sd,log=F),
+       (1-pz)*dnorm(x,mean,sd,log=F)))  }
+
+# ZERO INFLATED GAMMA PDF
+zinf_gamma_PDF_climate <- function(x,mean,scale,pz)
+{ shape <- mean/scale
+  loglh <- log(ifelse(x==0,pz + (1-pz)*dgamma(0,shape=shape,scale=scale,log=F),
+                 (1-pz)*dgamma(x,shape=shape,scale=scale,log=F)))
+  return(loglh)
+}
+
+#  make sure you only take the logs AFTER you have combined the zero-inflation term (pz)
+#     and the probability from the traditional PDF
+
+

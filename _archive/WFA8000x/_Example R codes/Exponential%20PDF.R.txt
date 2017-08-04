@@ -1,0 +1,63 @@
+#################################################################
+#
+#          Likelihood Methods in Ecology
+#
+#  Lab 3 - Probability Density Functions as Likelihood Functions
+#
+#################################################################
+
+
+###########################################################
+#
+#      The Exponential PDF  (dexp)
+#
+###########################################################
+
+###########################################################
+#
+#   The R version of the exponential pdf is parameterized in 
+#     terms of a "rate" parameter, where the mean = 1/rate
+#
+#   So, to use this PDF as a likelihood function when your
+#      model predicts the mean, write your own version of
+#      the function...
+#
+###########################################################
+
+exp_pdf <- function(x,mean,log=FALSE)
+{  dexp(x,rate=1/mean,log)  }
+
+####  so, what does it look like?
+x <- seq(0,100,1)
+mean = 10
+y1 <- exp_pdf(x,mean,log=F)
+windows()
+plot(x,y1,type="l",lwd=3,cex.main = 1.5, cex.lab = 1.5,pch=19,col=1,xlab="x",
+   ylab="P(x)", main = "Exponential PDF")
+text(25,0.05,paste("scale =",scale),cex=1.25)
+
+mean = 20
+y2 <- exp_pdf(x,mean,log=F)
+lines(x,y2,lwd=3,col=2)
+
+mean = 50
+y3 <- exp_pdf(x,mean,log=F)
+lines(x,y3,lwd=3,col=3)
+
+mean = 80
+y4 <- exp_pdf(x,mean,log=F)
+lines(x,y4,lwd=3,col=4)
+
+leg <- c("mean = 1","mean = 2","mean = 5","mean = 8")
+legend("topright", legend=leg, cex=1.5, lty=1,lwd=3, col=1:4)
+
+
+####  What range of x is the exponential distribution defined for?  (can it handle negative values?)
+
+####  Does this truly function as a PDF?
+####  i.e. Are there parameter values for which it is not bounded between 0 and 1?
+
+####  The exponential distribution is most commonly used for survival and hazard studies.
+#       If the future expected lifetime at any time t has the same distribution 
+#       at all t, then the process is exponentially
+#       distributed - this is known as a "memoryless" system

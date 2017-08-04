@@ -1,0 +1,98 @@
+---
+title: "Untitled"
+author: "Michael E. Colvin"
+date: "Monday, June 06, 2016"
+output: html_document
+---
+
+Objective:  Evaluate whether sapply, vapply, or which is the best approach for simulating pallid sturgeon dynamics on an individual level.
+
+First the packages we will need for benchmarking.
+
+```{r}
+library(microbenchmark)
+library(ggplot2)
+```
+
+Now we can set up some biggish matrices to apply functions to, like we would in the Pallid Sturgeon model.
+
+
+```{r}
+daug<- 50000
+nreps<- 10
+Z<-W<- matrix(0,daug,nreps)
+```
+
+Now we can population the matrices
+
+```{r}
+for(i in 1:nreps)
+    {
+    Z[,i]<- rbinom(daug,1,0.8) 
+    W[,i]<- runif(daug,100,1500)
+    }
+W<- W*Z
+
+indx<- lapply(1:nreps,function(x) which(Z[,x]==1))
+tmp<- unlist(lapply(1:nreps,function(x) length(indx[[x]])))
+indx<- cbind(unlist(indx),sort(rep(1:nreps,tmp)))
+```
+
+
+
+```{r}
+
+mbm=microbenchmark(
+one=sapply(1:nreps,function(x)
+    {
+    rlnorm(nrow(W),W[,x]*Z[,x],0.1)
+    }),
+two= rlnorm(nrow(indx),W[indx],0.1),
+times=500)
+
+autoplot(mbm)
+
+
+one<-c()
+for(i in 1:100)
+  {
+  ptm<-proc.time()
+W[]<-sapply(1:nreps,function(x)
+    {
+    rlnorm(nrow(W),W[,x]*Z[,x],0.1)
+    })
+   tm<- (proc.time()-ptm)[3]
+  one<-c(one,tm) 
+  }
+
+
+two<-c()
+for(i in 1:100)
+  {
+  ptm<-proc.time()
+  indx<- lapply(1:nreps,function(x) which(Z[,x]==1))
+  tmp<- unlist(lapply(1:nreps,function(x) length(indx[[x]])))
+  indx<- cbind(unlist(indx),sort(rep(1:nreps,tmp)))
+  W[indx]<-rlnorm(nrow(indx),W[indx],0.1)
+  tm<- (proc.time()-ptm)[3]
+  two<-c(two,tm)
+  }
+
+
+
+boxplot(cbind(one,two))
+
+```
+
+
+
+
+
+
+You can also embed plots, for example:
+
+```{r, echo=FALSE}
+plot(cars)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

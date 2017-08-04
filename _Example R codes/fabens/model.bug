@@ -1,0 +1,17 @@
+model
+{
+    for (i in 1:N) {
+        L2[i] <- (Linfi[i] - L1[i]) * (1 - exp(-k * dY[i])) + 
+            L1[i]
+        LL2[i] <- log(L2[i])
+        Y[i] ~ dlnorm(LL2[i], prec_obs)
+        Linfi[i] ~ dlnorm(LLinf, prec_Linf)
+    }
+    k ~ dunif(0.001, 0.2)
+    Linf ~ dnorm(900, 1.00000E-05)
+    LLinf <- log(Linf)
+    sigma_obs <- 1/sqrt(prec_obs)
+    sigma_Linf <- 1/sqrt(prec_Linf)
+    prec_obs ~ dgamma(0.001, 1.00000E-04)
+    prec_Linf ~ dgamma(0.001, 1.00000E-04)
+}

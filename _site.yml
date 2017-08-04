@@ -4,16 +4,19 @@ navbar:
   right:
     - text: "Resources"
       icon: fa-files-o
-      href: classes.html     
+      href: resources.html     
     - text: "Analysis"
       icon: fa-line-chart
-      href: analysis.html  
+      href: analyses.html  
     - text: "Literature"
       icon: fa-book     
       href: literature.html 
     - text: "Syllabus"
       icon: fa-file-text
       href: syllabus.html       
+    - text: "Media"
+      icon: fa-flickr
+      href: https://www.flickr.com/photos/144574814@N07/ 
     - text: "Email"
       icon: fa-envelope-o
       href: mailto:michael.colvin@msstate.edu?Subject=WFA4313

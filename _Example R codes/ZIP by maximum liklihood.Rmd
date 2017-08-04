@@ -1,0 +1,51 @@
+---
+title: "Zero-Inflated Poisson Regresson ML"
+author: "Michael E. Colvin"
+date: "Monday, November 24, 2014"
+output: html_document
+---
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r}
+
+library(pscl)
+
+Nvalues<- 1000
+# Zero inflation based on a covariate x
+x<- runif(Nvalues, 0, 30)
+yevent<- -3.5 + 0.2*x # probability of encountering critters on logit scale 
+
+pevent<- exp(yevent)/(1+ exp(yevent)) # logit link to transform to values between 0 and 1
+plot(x,pevent) # lets look at the relationship
+
+z<- rbinom(Nvalues,1,pevent) # are critters encountered (1) or not (0)
+
+# ABUNDANCE MODEL WITH COVARIATE XX
+xx<- runif(Nvalues, 50, 89)
+
+y<- -3 + 0.065*xx # linear model predicting abundance
+yexp<- exp(y) # log link
+yobs<- rpois(Nvalues, yexp*z) # abundace given the site is 1, otherwise 0
+
+plot(xx, yobs) # lets look at the data
+dat<-data.frame(count=yobs,x=x,xx=xx)# bundle up simulated data
+```
+
+Code breakdown:  The covariates to the left of the vertical pipe model the abundances and the covaraites to the right of the pipe model the zero inflations.  
+
+```{r, echo=FALSE}
+m <- zeroinfl(count ~ xx | x, data = dat)
+    
+mnull<- zeroinfl(count ~ 1 | 1, data = dat)
+plot(fitted(m),resid(m))
+
+plot(resid(m)[-1],resid(m)[-Nvalues])
+
+ACF(m)
+plot(fitted(m),dat$count)
+```
+
+
