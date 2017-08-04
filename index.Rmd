@@ -1,0 +1,21 @@
+---
+title: "WFA4313/6313 Fisheries Management"
+output: 
+  html_document:
+    includes:
+      after_body: _includes/include_footer-no-disqus.html
+      in_header: _includes/header_banner.html 
+---
+
+<!--
+library(knitr)
+rmarkdown::render_site("index.Rmd")# build website
+rmarkdown::render_site()# build website
+-->
+
+# Course announcements
+
+* Welcome to class! 
+    * You can see the course schedule [here](schedule.html) and syllabus [here](syllabus.html). 
+    * We will not have class next week due to the Annual AFS meeting in Tampa.
+

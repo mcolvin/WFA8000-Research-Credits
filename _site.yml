@@ -1,0 +1,31 @@
+name: "wfa8000"
+navbar:
+  title: "WFA8000"
+  right:
+    - text: "Resources"
+      icon: fa-files-o
+      href: classes.html     
+    - text: "Analysis"
+      icon: fa-line-chart
+      href: analysis.html  
+    - text: "Literature"
+      icon: fa-book     
+      href: literature.html 
+    - text: "Syllabus"
+      icon: fa-file-text
+      href: syllabus.html       
+    - text: "Email"
+      icon: fa-envelope-o
+      href: mailto:michael.colvin@msstate.edu?Subject=WFA4313
+output_dir: "docs"
+output:
+  html_document:
+    theme: cosmo
+    highlight: textmate
+    includes:
+      in_header: NULL
+      before_body: NULL
+      after_body: include_footer.html    
+    
+
+    
