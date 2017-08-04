@@ -1,0 +1,63 @@
+---
+title: ""
+---
+```{r echo=FALSE, out.width="95%"}
+include_graphics("media/DSCF0082.JPG")
+```
+<!--
+library(knitr)
+rmarkdown::render_site()# build website
+ 
+# rmarkdown::render_site("index.Rmd")# build webpage
+  q(save="no")  
+-->
+
+
+# Postdoc expectations
+
+
+## My expectations of postdoctoral associates:
+
+* Take advantage of opportunities to collaborate, teach, and do research 
+as long as it is a means to meet your fundamental objectives. 
+* Work diligently on your main project and meet deadlines and provide 
+deliverables 
+* Communicate effectively
+* Write... That is how we all are quantified. For better or worse. As a 
+postdoc you are entering the production writing realm. That transition 
+from Ph.D. to postdoc is critical. Recognizing that nothing is perfect 
+and your coauthors are there to help is a significant difference from 
+Ph.D. and postdoc. 
+* Ask questions and clarifications. I recognize I can throw out jargon, 
+call me on it! 
+* Contribute to the overall lab dynamic (e.g., interact with lab 
+members, collaborate on projects) 
+* Take opportunities to learn new skills as long as it is a means to 
+meet your fundamental objectives. 
+* Develop and refine your workflow.
+* Annotate your code, your most important collaborator is your future self.
+Make it easy for your future self to figure out what is going and and what
+needs to be done.
+* Develop a system to keep track of your to do list. Could be paper, 
+could be digital, the objective is to minimize the likelihood of something
+falling through the cracks. 
+* Back up everything!
+* Finish up your dissertation work! Communicating your Ph.D. research is 
+important and your commitment to your Ph.D. advisor is one you should 
+keep. Therefore as long as it does not interfere with meeting deadlines 
+or providing deliverables for the project that is paying your salary 
+then get that material out! 
+* Teach me about new things! Learning from others is probably one of the 
+neatest things we get to do as academics. 
+
+
+## What you can expect of me
+
+* Help provide the opportunities for you to meet your fundamental 
+objectives (e.g., teaching, analysis, publication, collaboration) 
+* Work with you to devise plan to meet your fundamental objectives 
+* Teach you new and advanced skills that will improve your 
+competitiveness for future jobs 
+* Provide you with network introductions that can potentially improve 
+your competitiveness for future jobs 
+

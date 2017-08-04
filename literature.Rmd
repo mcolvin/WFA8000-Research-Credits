@@ -5,6 +5,10 @@ output:
     includes:
       after_body: _includes/include_footer-no-disqus.html
       in_header: _includes/header_banner.html 
+    toc: true
+    toc_float:
+      collapsed: false
+      smooth_scroll: false
 ---
 
 <!--
@@ -16,5 +20,4 @@ rmarkdown::render_site()# build website
 
 # Literature
 
-
-* 
+Coming soon 

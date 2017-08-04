@@ -19,6 +19,9 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-1.1/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-1.1/highlight.js"></script>
@@ -163,6 +166,107 @@ $(document).ready(function () {
 
 
 
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = false;
+    options.smoothScroll = false;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+.tocify-subheader {
+  display: inline;
+}
+.tocify-subheader .tocify-item {
+  font-size: 0.95em;
+}
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
 
 
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
@@ -238,26 +342,85 @@ $(document).ready(function () {
 
 <!--
 library(knitr)
-rmarkdown::render_site("index.Rmd")# build website
+rmarkdown::render_site("resources.Rmd")# build website
 rmarkdown::render_site()# build website
 -->
 <div id="useful-resources" class="section level1">
 <h1>Useful Resources</h1>
+<div id="communicating" class="section level2">
+<h2>Communicating</h2>
+<div id="written" class="section level3">
+<h3>Written</h3>
+<ol style="list-style-type: decimal">
+<li><a href="PDF/write-01.pdf">How to write a scientific paper</a></li>
+<li><a href="https://students.fisheries.org/writing-resources/how-to-write-and-defend-your-thesis/">How to write and defend your thesis</a></li>
+<li><a href="PDF/write-02.pdf">Writing a Literature Review: Six Steps to Get You from Start to Finish</a> <a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a></li>
+<li><a href="PDF/write-03.pdf">The 5 pivotal paragraphs in a paper</a> <a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a></li>
+<li><a href="PDF/write-04.pdf">Writing Manuscripts: The Alternative ‘Guide to Authors’</a> <a href="#fn3" class="footnoteRef" id="fnref3"><sup>3</sup></a></li>
+<li><a href="PDF/write-07.pdf">Top tips for starting a new research topic: systematic quantitative literature reviews</a> <a href="#fn4" class="footnoteRef" id="fnref4"><sup>4</sup></a></li>
+<li><a href="PDF/write-06.pdf">Ten Simple Rules for Writing a Literature Review</a> <a href="#fn5" class="footnoteRef" id="fnref5"><sup>5</sup></a></li>
+<li><a href="PDF/write-08.pdf">Three Writing Tips From Pulitzer Prize-Winning Author Jennifer Egan</a> <a href="#fn6" class="footnoteRef" id="fnref6"><sup>6</sup></a></li>
+</ol>
+</div>
+<div id="oral" class="section level3">
+<h3>Oral</h3>
+<ol style="list-style-type: decimal">
+<li><a href="PDF/oral-01.pdf">Making conference talks compelling and meaningful</a> <a href="#fn7" class="footnoteRef" id="fnref7"><sup>7</sup></a></li>
+<li><a href="PDF/oral-02.pdf">How Google’s CEO Creates Brain-Friendly Presentations</a> <a href="#fn8" class="footnoteRef" id="fnref8"><sup>8</sup></a></li>
+</ol>
+</div>
+<div id="web" class="section level3">
+<h3>Web</h3>
+<ol style="list-style-type: decimal">
+<li><a href="PDF/web-01.pdf">Find the Best Color Scheme for Your Website with This Guide</a> <a href="#fn9" class="footnoteRef" id="fnref9"><sup>9</sup></a></li>
+</ol>
+</div>
+<div id="media" class="section level3">
+<h3>Media</h3>
+<ol style="list-style-type: decimal">
+<li><a href="PDF/media-01.pdf">A Video is Worth a Million Words: Why You Should Make a Video about YOUR Article</a> <a href="#fn10" class="footnoteRef" id="fnref10"><sup>10</sup></a></li>
+</ol>
+</div>
+</div>
 <div id="networking-and-meetings" class="section level2">
 <h2>Networking and meetings</h2>
+<ol style="list-style-type: decimal">
+<li><a href="PDF/network-01.pdf">Summer conference season advice</a>Source: <a href="#fn11" class="footnoteRef" id="fnref11"><sup>11</sup></a></li>
+<li><a href="PDF/network-02.pdf">Maximize Your Meeting: A Student’s Guide to AFS Meetings</a><a href="#fn12" class="footnoteRef" id="fnref12"><sup>12</sup></a></li>
+<li><a href="PDF/network-03.pdf">Seven top tips for making the most of huge conferences</a></li>
+</ol>
 </div>
 <div id="goals-and-objectives" class="section level2">
 <h2>Goals and objectives</h2>
-<ul>
-<li>Here’s a simple trick to achieve your long-term goals<a href="pdf/long-term-goals.pdf">here</a> Source: <a href="http://alifeofproductivity.com/a-simple-trick-to-achieve-long-term-goals" class="uri">http://alifeofproductivity.com/a-simple-trick-to-achieve-long-term-goals</a>)</li>
-</ul>
+<ol style="list-style-type: decimal">
+<li><a href="pdf/long-term-goals.pdf">Here’s a simple trick to achieve your long-term goals</a> Source: <a href="http://alifeofproductivity.com/a-simple-trick-to-achieve-long-term-goals" class="uri">http://alifeofproductivity.com/a-simple-trick-to-achieve-long-term-goals</a></li>
+</ol>
 </div>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p><a href="http://getalifephd.blogspot.com/2016/02/writing-literature-review-six-steps-to.html" class="uri">http://getalifephd.blogspot.com/2016/02/writing-literature-review-six-steps-to.html</a><a href="#fnref1">↩</a></p></li>
+<li id="fn2"><p><a href="https://dynamicecology.wordpress.com/2016/02/24/the-5-pivotal-paragraphs-in-a-paper/" class="uri">https://dynamicecology.wordpress.com/2016/02/24/the-5-pivotal-paragraphs-in-a-paper/</a><a href="#fnref2">↩</a></p></li>
+<li id="fn3"><p><a href="https://methodsblog.wordpress.com/2016/03/15/writing-manuscripts/" class="uri">https://methodsblog.wordpress.com/2016/03/15/writing-manuscripts/</a><a href="#fnref3">↩</a></p></li>
+<li id="fn4"><p><a href="https://www.iccs.org.uk/top-tips-for-starting-a-new-research-topic-systematic-quantitative-literature-reviews/" class="uri">https://www.iccs.org.uk/top-tips-for-starting-a-new-research-topic-systematic-quantitative-literature-reviews/</a><a href="#fnref4">↩</a></p></li>
+<li id="fn5"><p><a href="http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003149" class="uri">http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003149</a><a href="#fnref5">↩</a></p></li>
+<li id="fn6"><p><a href="http://lifehacker.com/three-writing-tips-from-pulitzer-prize-winning-author-j-1786507353/amp" class="uri">http://lifehacker.com/three-writing-tips-from-pulitzer-prize-winning-author-j-1786507353/amp</a><a href="#fnref6">↩</a></p></li>
+<li id="fn7"><p><a href="http://evol-eco.blogspot.com/2017/07/making-conference-talks-compelling-and.html" class="uri">http://evol-eco.blogspot.com/2017/07/making-conference-talks-compelling-and.html</a><a href="#fnref7">↩</a></p></li>
+<li id="fn8"><p><a href="http://google.com/newsstand/s/CBIwwYSZ0Tk" class="uri">http://google.com/newsstand/s/CBIwwYSZ0Tk</a><a href="#fnref8">↩</a></p></li>
+<li id="fn9"><p><a href="http://lifehacker.com/find-the-best-color-scheme-for-your-website-with-this-g-1769424137" class="uri">http://lifehacker.com/find-the-best-color-scheme-for-your-website-with-this-g-1769424137</a><a href="#fnref9">↩</a></p></li>
+<li id="fn10"><p><a href="https://methodsblog.wordpress.com/2016/04/28/videos-about-articles/" class="uri">https://methodsblog.wordpress.com/2016/04/28/videos-about-articles/</a><a href="#fnref10">↩</a></p></li>
+<li id="fn11"><p><a href="https://dynamicecology.wordpress.com/2017/05/03/summer-conference-season-advice/#more-42767" class="uri">https://dynamicecology.wordpress.com/2017/05/03/summer-conference-season-advice/#more-42767</a><a href="#fnref11">↩</a></p></li>
+<li id="fn12"><p><a href="http://www.tandfonline.com/loi/ufsh20" class="uri">http://www.tandfonline.com/loi/ufsh20</a><a href="#fnref12">↩</a></p></li>
+</ol>
 </div>
 
  </div> <!-- articleBandContent -->
 </div> <!-- pageContent -->
 
 
+</div>
+</div>
 
 </div>
 

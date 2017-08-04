@@ -5,18 +5,57 @@ output:
     includes:
       after_body: _includes/include_footer-no-disqus.html
       in_header: _includes/header_banner.html 
+    toc: true
+    toc_float:
+      collapsed: false
+      smooth_scroll: false
 ---
 
 <!--
 library(knitr)
-rmarkdown::render_site("index.Rmd")# build website
+rmarkdown::render_site("analyses.Rmd")# build website
 rmarkdown::render_site()# build website
 -->
 
 
-# Useful Resources
+# R codes and analysis tutorials
 
-* Here's a simple trick to achieve your long-term 
-goals[here](pdf/long-term-goals.pdf) Source: 
-http://alifeofproductivity.com/a-simple-trick-to-achieve-long-term-goals) 
+Coming soon
+<!--
+## Basic R coding
+
+## Data manipulation
+
+## Distributions
+
+## Fitting models to data
+
+## Fisheries models 
+
+### Length-weight
+
+### Age-length (growth)
+
+### Mortality
+
+
+## Capture recapture
+
+### Closed populations
+
+### Open populations
+
+### Closed and open populations
+
+## Occupancy
+
+### Single season
+
+### Multiple seasons
+
+### 
+
+## Optimization
+-->
+
 

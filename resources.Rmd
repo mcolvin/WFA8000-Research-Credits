@@ -5,22 +5,59 @@ output:
     includes:
       after_body: _includes/include_footer-no-disqus.html
       in_header: _includes/header_banner.html 
+    toc: true
+    toc_float:
+      collapsed: false
+      smooth_scroll: false
 ---
 
 <!--
 library(knitr)
-rmarkdown::render_site("index.Rmd")# build website
+rmarkdown::render_site("resources.Rmd")# build website
 rmarkdown::render_site()# build website
 -->
 
 
-# Useful Resources
+# Useful Resources 
+
+## Communicating 
+
+### Written
+
+1. [How to write a scientific paper](PDF/write-01.pdf)
+1. [How to write and defend your thesis](https://students.fisheries.org/writing-resources/how-to-write-and-defend-your-thesis/)
+1. [Writing a Literature Review: Six Steps to Get You from Start to Finish](PDF/write-02.pdf) ^[http://getalifephd.blogspot.com/2016/02/writing-literature-review-six-steps-to.html]
+1. [The 5 pivotal paragraphs in a paper](PDF/write-03.pdf)  ^[https://dynamicecology.wordpress.com/2016/02/24/the-5-pivotal-paragraphs-in-a-paper/]
+1. [Writing Manuscripts: The Alternative 'Guide to Authors'](PDF/write-04.pdf) ^[https://methodsblog.wordpress.com/2016/03/15/writing-manuscripts/]
+1. [Top tips for starting a new research topic: systematic quantitative literature reviews](PDF/write-07.pdf) ^[https://www.iccs.org.uk/top-tips-for-starting-a-new-research-topic-systematic-quantitative-literature-reviews/]
+1. [Ten Simple Rules for Writing a Literature Review](PDF/write-06.pdf) ^[http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003149]
+2. [Three Writing Tips From Pulitzer Prize-Winning Author Jennifer Egan](PDF/write-08.pdf) ^[http://lifehacker.com/three-writing-tips-from-pulitzer-prize-winning-author-j-1786507353/amp]
+
+### Oral
+
+1. [Making conference talks compelling and meaningful](PDF/oral-01.pdf) ^[http://evol-eco.blogspot.com/2017/07/making-conference-talks-compelling-and.html]
+1. [How Google's CEO Creates Brain-Friendly Presentations](PDF/oral-02.pdf) ^[http://google.com/newsstand/s/CBIwwYSZ0Tk]
+
+
+### Web
+
+1. [Find the Best Color Scheme for Your Website with This Guide](PDF/web-01.pdf) ^[http://lifehacker.com/find-the-best-color-scheme-for-your-website-with-this-g-1769424137]
+
+### Media
+
+1. [A Video is Worth a Million Words: Why You Should Make a Video about YOUR Article](PDF/media-01.pdf) ^[https://methodsblog.wordpress.com/2016/04/28/videos-about-articles/]
+
 
 ## Networking and meetings
 
+1.  [Summer conference season advice](PDF/network-01.pdf)Source: ^[https://dynamicecology.wordpress.com/2017/05/03/summer-conference-season-advice/#more-42767]
+1.  [Maximize Your Meeting: A Student's Guide to AFS Meetings](PDF/network-02.pdf)^[http://www.tandfonline.com/loi/ufsh20]
+1.  [Seven top tips for making the most of huge conferences](PDF/network-03.pdf)
+
 
 ## Goals and objectives
-* Here's a simple trick to achieve your long-term 
-goals[here](pdf/long-term-goals.pdf) Source: 
-http://alifeofproductivity.com/a-simple-trick-to-achieve-long-term-goals) 
+
+1. [Here's a simple trick to achieve your long-term 
+goals](pdf/long-term-goals.pdf) Source: 
+http://alifeofproductivity.com/a-simple-trick-to-achieve-long-term-goals
 
