@@ -3,7 +3,7 @@ title: "WFA48000 Research Credits"
 output: 
   html_document:
     includes:
-      after_body: _includes/include_footer-no-disqus.html
+      after_body: _includes/include_footer.html
       in_header: _includes/header_banner.html 
     toc: true
     toc_float:
@@ -20,7 +20,12 @@ rmarkdown::render_site()# build website
 
 # Useful Resources 
 
-## Communicating 
+Below are links for varying resources that may be useful to 
+your professional development. If you find content that you believe
+will be useful to the group and future readers, please 
+post a comment below. 
+
+## Communications
 
 ### Written
 
@@ -58,6 +63,5 @@ rmarkdown::render_site()# build website
 ## Goals and objectives
 
 1. [Here's a simple trick to achieve your long-term 
-goals](pdf/long-term-goals.pdf) Source: 
-http://alifeofproductivity.com/a-simple-trick-to-achieve-long-term-goals
+goals](pdf/long-term-goals.pdf) ^[http://alifeofproductivity.com/a-simple-trick-to-achieve-long-term-goals]
 
