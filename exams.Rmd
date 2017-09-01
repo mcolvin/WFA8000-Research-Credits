@@ -1,0 +1,103 @@
+---
+title: "WFA48000 Research Credits"
+output: 
+  html_document:
+    includes:
+      after_body: _includes/include_footer-no-disqus.html
+      in_header: _includes/header_banner.html 
+    toc: false
+    toc_float:
+      collapsed: false
+      smooth_scroll: false
+---
+
+<!--
+library(knitr)
+rmarkdown::render_site("exams.Rmd")# build website
+rmarkdown::render_site()# build website
+-->
+
+
+# Comprehensive exams
+
+Masters and PhD students are required to take comprehensive exams to 
+satisfy graduation requirement. This process is common for PhD programs 
+however it is less common for masters programs. Specifically, during the 
+closed door session after the public presentation of the thesis the 
+graduate student's committee is expected to query the student about the 
+thesis and discipline specific knowledge. Recent examinations, 
+particularly at the masters level, have been abysmal. Likely in part due 
+to insufficient guidance from the advisor, insufficient preparation by 
+the student, and lack of overall clarity. To that end the material in 
+this document outlines what learning objectives we expect students 
+engaged in research in our lab to be able to achieve during their time 
+at Mississippi State University. These learning objectives will also 
+provide clear guidance to prepare for your final comprehensive exam. 
+
+PhD students require completion of a rigorous comprehensive written and 
+oral examination prior to transitioning to PhD candidate status. This 
+process is directed by the committee and therefore should be more clear
+as to roles and expectations but it is incumbent on the student to identify
+any points that are unclear.
+
+The content below is organized into broad categories that we believe a 
+practicing fish or fisheries biologist or manager should be able to 
+competently do. There are obvious expectations to some of these depending
+on your anticipated career. 
+
+## Contents {.tabset}
+
+### Field & Lab Skills 
+
+1. Maintenance
+    * Winterize a boat engine
+    * Lube and repack trailer wheel hubs
+1. Boat handling and navigation
+    * Backing up a boat on a trailer
+    * Launching and trailering a boat
+    * Securing a boat for travel
+    * Safety checks prior to travel
+1. Navigation
+    * Read a topographic map
+    * Use a GPS
+1. Fish identification
+    * Differentiate major North American fish families<!-- add them   -->
+    * Defining characters of fish species in your study
+1. Invertebrate identification (optional)
+    * Differentiate major North American invertebrate orders or families<!-- add them   -->
+    * Defining characters of invertebrates encountered in your study
+1. Develop a field safety plan
+1. How to extract aging structures, process, and age
+
+
+### Fisheries Analyses 
+
+1. How to estimate mortality
+1. How to estimate survival
+1. Evaluate length limits
+1. Estimate abundance
+1. Estimate relative abundance
+1. Predict weight from length
+1. Predict length from age
+1. Calculate proportional stock densities
+
+
+
+### General Fisheries Knowledge 
+1. Difference between instantaneous and finite rates
+1. Relationship between length and weight
+1. Relationship between age and length
+1. How to craft SMART management objectives
+1. Background and application of Proportional Stock Density Values
+
+### General Analyses 
+
+1. Linear regression
+1. ANOVA
+1. ANCOVA
+1. Multivariate techniques (optional unless interested in fish assemblages)
+
+ 
+    
+
+ 

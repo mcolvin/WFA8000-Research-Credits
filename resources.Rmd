@@ -37,12 +37,16 @@ post a comment below.
 1. [Top tips for starting a new research topic: systematic quantitative literature reviews](PDF/write-07.pdf) ^[https://www.iccs.org.uk/top-tips-for-starting-a-new-research-topic-systematic-quantitative-literature-reviews/]
 1. [Ten Simple Rules for Writing a Literature Review](PDF/write-06.pdf) ^[http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003149]
 2. [Three Writing Tips From Pulitzer Prize-Winning Author Jennifer Egan](PDF/write-08.pdf) ^[http://lifehacker.com/three-writing-tips-from-pulitzer-prize-winning-author-j-1786507353/amp]
+1. [From an Engineer to an Author, I Find These Writing Tips Really Helpful ](PDF/write-09.pdf)^[http://www.lifehack.org/622355/x-hacks-to-largely-improve-your-writing]
+1. [Advice on writing research articles](PDF/write-10.pdf)^[http://andrewgelman.com/2009/07/advice_on_writi/]
+1. [How to Write a Publishable Paper as a Class Project](PDF/write-11.pdf)^[https://gking.harvard.edu/papers]
+1. [Advice on Research and Writing: A collection of advice about how to do research and how to communicate effectively (primarily for computer scientists).](http://www.cs.cmu.edu/afs/cs.cmu.edu/user/mleone/web/how-to.html)
 
 ### Oral
 
 1. [Making conference talks compelling and meaningful](PDF/oral-01.pdf) ^[http://evol-eco.blogspot.com/2017/07/making-conference-talks-compelling-and.html]
 1. [How Google's CEO Creates Brain-Friendly Presentations](PDF/oral-02.pdf) ^[http://google.com/newsstand/s/CBIwwYSZ0Tk]
-
+1. [How to give a good research talk](PDF/oral-03.pdf)^[https://www.microsoft.com/en-us/research/academic-program/give-great-research-talk/]
 
 ### Web
 
@@ -65,3 +69,10 @@ post a comment below.
 1. [Here's a simple trick to achieve your long-term 
 goals](pdf/long-term-goals.pdf) ^[http://alifeofproductivity.com/a-simple-trick-to-achieve-long-term-goals]
 
+
+## Field Sampling 
+
+* [Better Safe than Sorry: Planning for Safe and Successful Fieldwork](PDF/field-01.pdf)
+<!--
+LOGISTICS OF ECOLOGICAL SAMPLING ON LARGE RIVERS https://cfpub.epa.gov/si/si_public_record_report.cfm?dirEntryId=63181
+-->

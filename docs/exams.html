@@ -19,9 +19,6 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
-<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
-<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
-<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-1.1/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-1.1/highlight.js"></script>
@@ -166,107 +163,6 @@ $(document).ready(function () {
 
 
 
-<script>
-$(document).ready(function ()  {
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1,h2,h3",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
-      },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
-    };
-    options.showAndHide = false;
-    options.smoothScroll = false;
-
-    // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
-});
-</script>
-
-<style type="text/css">
-
-#TOC {
-  margin: 25px 0px 20px 0px;
-}
-@media (max-width: 768px) {
-#TOC {
-  position: relative;
-  width: 100%;
-}
-}
-
-
-.toc-content {
-  padding-left: 30px;
-  padding-right: 40px;
-}
-
-div.main-container {
-  max-width: 1200px;
-}
-
-div.tocify {
-  width: 20%;
-  max-width: 260px;
-  max-height: 85%;
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  div.tocify {
-    width: 25%;
-  }
-}
-
-@media (max-width: 767px) {
-  div.tocify {
-    width: 100%;
-    max-width: none;
-  }
-}
-
-.tocify ul, .tocify li {
-  line-height: 20px;
-}
-
-.tocify-subheader .tocify-item {
-  font-size: 0.90em;
-  padding-left: 25px;
-  text-indent: 0;
-}
-
-.tocify .list-group-item {
-  border-radius: 0px;
-}
-
-.tocify-subheader {
-  display: inline;
-}
-.tocify-subheader .tocify-item {
-  font-size: 0.95em;
-}
-
-</style>
-
-<!-- setup 3col/9col grid for toc_float and main content  -->
-<div class="row-fluid">
-<div class="col-xs-12 col-sm-4 col-md-3">
-<div id="TOC" class="tocify">
-</div>
-</div>
-
-<div class="toc-content col-xs-12 col-sm-8 col-md-9">
-
-
 
 
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
@@ -349,54 +245,82 @@ div.tocify {
 
 <!--
 library(knitr)
-rmarkdown::render_site("literature.Rmd")# build website
+rmarkdown::render_site("exams.Rmd")# build website
 rmarkdown::render_site()# build website
 -->
-<div id="literature" class="section level1">
-<h1>Literature</h1>
-<div id="fisheries-management" class="section level3">
-<h3>1. Fisheries management</h3>
+<div id="comprehensive-exams" class="section level1">
+<h1>Comprehensive exams</h1>
+<p>Masters and PhD students are required to take comprehensive exams to satisfy graduation requirement. This process is common for PhD programs however it is less common for masters programs. Specifically, during the closed door session after the public presentation of the thesis the graduate student’s committee is expected to query the student about the thesis and discipline specific knowledge. Recent examinations, particularly at the masters level, have been abysmal. Likely in part due to insufficient guidance from the advisor, insufficient preparation by the student, and lack of overall clarity. To that end the material in this document outlines what learning objectives we expect students engaged in research in our lab to be able to achieve during their time at Mississippi State University. These learning objectives will also provide clear guidance to prepare for your final comprehensive exam.</p>
+<p>PhD students require completion of a rigorous comprehensive written and oral examination prior to transitioning to PhD candidate status. This process is directed by the committee and therefore should be more clear as to roles and expectations but it is incumbent on the student to identify any points that are unclear.</p>
+<p>The content below is organized into broad categories that we believe a practicing fish or fisheries biologist or manager should be able to competently do. There are obvious expectations to some of these depending on your anticipated career.</p>
+<div id="contents" class="section level2 tabset">
+<h2>Contents</h2>
+<div id="field-lab-skills" class="section level3">
+<h3>Field &amp; Lab Skills</h3>
+<ol style="list-style-type: decimal">
+<li>Maintenance
 <ul>
-<li>Pauly, D. 2001. Fisheries Management. John Wiley &amp; Sons, Ltd. <a href="pdfs/P178.pdf">pdf</a></li>
-</ul>
-<!-- end of list -->
+<li>Winterize a boat engine</li>
+<li>Lube and repack trailer wheel hubs</li>
+</ul></li>
+<li>Boat handling and navigation
+<ul>
+<li>Backing up a boat on a trailer</li>
+<li>Launching and trailering a boat</li>
+<li>Securing a boat for travel</li>
+<li>Safety checks prior to travel</li>
+</ul></li>
+<li>Navigation
+<ul>
+<li>Read a topographic map</li>
+<li>Use a GPS</li>
+</ul></li>
+<li>Fish identification
+<ul>
+<li>Differentiate major North American fish families<!-- add them   --></li>
+<li>Defining characters of fish species in your study</li>
+</ul></li>
+<li>Invertebrate identification (optional)
+<ul>
+<li>Differentiate major North American invertebrate orders or families<!-- add them   --></li>
+<li>Defining characters of invertebrates encountered in your study</li>
+</ul></li>
+<li>Develop a field safety plan</li>
+<li>How to extract aging structures, process, and age</li>
+</ol>
 </div>
-<div id="fisheries-history" class="section level3">
-<h3>2. Fisheries history</h3>
-<ul>
-<li>Lackey, R. T. 2005. Fisheries: history, science, and management. Pages 121-129 in J. H. Lehr and J. Keeley, editors. Water Encyclopedia: Surface and Agricultural Water. John Wiley and Sons, Inc., Publishers, New York. <a href="pdfs/L93.PDF">pdf</a></li>
-<li>Moffitt, C. M., G. Whelan, and R. Jackson. 2010. History of Inland Fisheries Management in North America. Pages 1-41 in W. A. Hubert and M. C. Quist, editors. Inland Fisheries Managment. American Fisheries Society, Bethesda, MD. <a href="pdfs/M285.pdf">pdf</a></li>
-<li>Nielsen, L. A. 1995. The practical uses of fisheries history. Fisheries 20:16-18. <a href="pdfs/N51.pdf">pdf</a></li>
-<li>Nielsen, L. A. 1999. History of Inland Fisheries Management in North America Pages 3-30 in C. C. Kohler and W. A. Hubert, editors. American Fisheries Society, Bethesda, MD. <a href="pdfs/N53.PDF">pdf</a></li>
-<li>Yoshiyama, R. M. 1999. A History of Salmon and People in the Central Valley Region of California. Reviews in Fisheries Science 7:197-239. <a href="pdfs/">pdf</a></li>
-<li>Meengs, C. C., and L. R.T. 2005. Estimating the size of historical Oregon salmon runs. Reviews in Fisheries Science 13:51-66. <a href="pdfs/M44.pdf">pdf</a></li>
-</ul>
-<!-- end of list -->
+<div id="fisheries-analyses" class="section level3">
+<h3>Fisheries Analyses</h3>
+<ol style="list-style-type: decimal">
+<li>How to estimate mortality</li>
+<li>How to estimate survival</li>
+<li>Evaluate length limits</li>
+<li>Estimate abundance</li>
+<li>Estimate relative abundance</li>
+<li>Predict weight from length</li>
+<li>Predict length from age</li>
+<li>Calculate proportional stock densities</li>
+</ol>
 </div>
-<div id="fisheries-goals-and-objectives" class="section level3">
-<h3>3.Fisheries goals and objectives</h3>
-<ul>
-<li>Bennett, D. H., E. L. Hampton, and R. T. Lackey. 1978. Current and future fisheries management goals: Implications for future management. Fisheries 3:10-14. <a href="pdfs/B269.pdf">pdf</a></li>
-<li>Barber, W. E., and J. N. Taylor. 1990. The Importance of Goals, Objectives, and Values in the Fisheries Management Process and Organization: A Review. North American Journal of Fisheries Management 10:365-373. <a href="pdfs/B270.pdf">pdf</a></li>
-<li>Pascoe, S., K. Brooks, T. Cannard, C. M. Dichmont, E. Jebreen, J. Schirmer, and L. Triantafillos. 2014. Social objectives of fisheries management: What are managers’ priorities? Ocean and Coastal Management 98:1-10. <a href="pdfs/P266.pdf">pdf</a></li>
-</ul>
-<!-- end of list -->
-<!--
-## Expert opinion
-
-* Booker, J. M., and L. A. McNamara. 2004. Solving black box computation problems using expert
-knowledge theory and methods. Reliability Engineering and System Safety 85:331-340.
-* Knol, A. B., P. Slottje, J. P. van der Sluijs, and E. Lebret. 2010. The use of expert elicitation in
-environmental health impact assessment: a seven step procedure. Environmental Health 9.
-doi:10.1186/1476-069X-9-19.
-* Page, T., A. L. Heathwaite, L. J. Thompson, L. Pope, and R. Willows. 2012. Eliciting fuzzy distributions
-from experts for ranking conceptual risk model components. Environmental Modelling and
-Software 36:19-34.
-* Nickerson, R. S. 1998. Confirmation bias: a ubiquitous phenomenon in many guises. Review of
-General Psychology 2:175-220.
-* Morgan, M. G., and M. Henrion. 1990. Uncertainty. In: A guide to dealing with uncertainty in
-quantitative risk and policy analysis. Cambridge University Press, ISBN 0-521-36542-2.
--->
+<div id="general-fisheries-knowledge" class="section level3">
+<h3>General Fisheries Knowledge</h3>
+<ol style="list-style-type: decimal">
+<li>Difference between instantaneous and finite rates</li>
+<li>Relationship between length and weight</li>
+<li>Relationship between age and length</li>
+<li>How to craft SMART management objectives</li>
+<li>Background and application of Proportional Stock Density Values</li>
+</ol>
+</div>
+<div id="general-analyses" class="section level3">
+<h3>General Analyses</h3>
+<ol style="list-style-type: decimal">
+<li>Linear regression</li>
+<li>ANOVA</li>
+<li>ANCOVA</li>
+<li>Multivariate techniques (optional unless interested in fish assemblages)</li>
+</ol>
+</div>
 </div>
 </div>
 
@@ -404,8 +328,6 @@ quantitative risk and policy analysis. Cambridge University Press, ISBN 0-521-36
 </div> <!-- pageContent -->
 
 
-</div>
-</div>
 
 </div>
 

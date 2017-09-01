@@ -13,7 +13,10 @@ navbar:
       href: literature.html 
     - text: "Syllabus"
       icon: fa-file-text
-      href: syllabus.html       
+      href: syllabus.html 
+    - text: "Exams"
+      icon: fa-mortar-board 
+      href: exams.html 
     - text: "Media"
       icon: fa-flickr
       href: https://www.flickr.com/photos/144574814@N07/ 

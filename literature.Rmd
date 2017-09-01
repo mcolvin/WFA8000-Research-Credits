@@ -20,4 +20,33 @@ rmarkdown::render_site()# build website
 
 # Literature
 
-Coming soon 
+
+```{r,echo=FALSE,results='asis'}
+dat<-xlsx::read.xlsx("_includes/course-schedule.xlsx" ,
+    sheetName="literature",
+    stringsAsFactors=FALSE)
+topics<-sort(unique(dat$L1))
+for(i in  1:length(topics))
+    {
+    sub<- subset(dat,L1==topics[i])
+    cat(paste0("### ", topics[i],sep=""))
+    pander::pandoc.list(as.list(sub$L2))
+    }    
+```
+
+<!--
+## Expert opinion
+
+* Booker, J. M., and L. A. McNamara. 2004. Solving black box computation problems using expert
+knowledge theory and methods. Reliability Engineering and System Safety 85:331-340.
+* Knol, A. B., P. Slottje, J. P. van der Sluijs, and E. Lebret. 2010. The use of expert elicitation in
+environmental health impact assessment: a seven step procedure. Environmental Health 9.
+doi:10.1186/1476-069X-9-19.
+* Page, T., A. L. Heathwaite, L. J. Thompson, L. Pope, and R. Willows. 2012. Eliciting fuzzy distributions
+from experts for ranking conceptual risk model components. Environmental Modelling and
+Software 36:19-34.
+* Nickerson, R. S. 1998. Confirmation bias: a ubiquitous phenomenon in many guises. Review of
+General Psychology 2:175-220.
+* Morgan, M. G., and M. Henrion. 1990. Uncertainty. In: A guide to dealing with uncertainty in
+quantitative risk and policy analysis. Cambridge University Press, ISBN 0-521-36542-2.
+-->

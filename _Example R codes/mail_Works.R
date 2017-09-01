@@ -8,8 +8,8 @@ OutApp <- COMCreate("Outlook.Application")
 ## create an email 
 outMail = OutApp$CreateItem(0)
 ## configure  email parameter 
-outMail[["To"]] = "colvin.mike@gmail.com"
-outMail[["subject"]] = "reply to this if you get it"
-outMail[["body"]] = "this is a test message please reply if you get it. \n Thanks, \n Mike"
+outMail[["To"]] = "5155200564@vtext.com" # email a text msg to phone
+outMail[["subject"]] = "Done"
+outMail[["body"]] = "simulations are done"
 ## send it                     
 outMail$Send()

@@ -12,7 +12,9 @@ library(unmarked)
 
 ```
 
-First let simulate some data that is similar to what you collected over the 4 years of the study.  I took some liberties in associations of data.
+First let simulate some data that is similar to what you collected over 
+the 4 years of the study. I took some liberties in associations of data. 
+
 
 
 ```{r}
