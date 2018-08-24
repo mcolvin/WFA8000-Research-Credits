@@ -16,6 +16,10 @@ rmarkdown::render_site()# build website
 
 Instructor(s): Drs. M.E. Colvin and L.E. Miranda
 
+## 
+
+Website: https://mcolvin.github.io/WFA8000-Research-Credits/
+
 ## Meetings
 
 We have an open door policy and are happy to talk any time, albeit we may have our door closed to concentrate on tasks or if it is noisy in the hallway. We will set up meetings periodically.  You can schedule meetings anytime during normal business hours.  You can see MEC&#39;s schedule anytime at [http://mec685.cfr.msstate.edu/calendar.html](http://mec685.cfr.msstate.edu/calendar.html) and find a time that I am free that coincides with your schedule.
