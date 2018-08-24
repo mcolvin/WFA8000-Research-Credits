@@ -56,6 +56,7 @@ be provided as needed on an individual basis.
 * **Pay attention to your email.** There are many ways of communicating. Use them to your advantage, but you must be responsible for anything sent by email and therefore you must check it regularly and respond to actionable emails in a timely fashion.  The details of an email contain clues as to whether you need to respond or not.  If the email is directly sent to you then you should probably respond with a reply or a simple acknowledgment that you received the email.  If you are listed as a courtesy copy (CC) you do not have to respond to an email, it is simply to keep you in the loop.  Use these guidelines when crafting emails and use the TO: and CC: appropriately for efficient email communication.
 * **Do semester reports.** At the beginning of each major semester (Spring Summer, Fall), we require the following:
   1. An updated CV
+  2. Updated contact information (address, phone, email)
   2. Classes you are taking with days and times
   3. A reflection on what you have done since your last report
   4. What you plan to do over the next semester with specific objectives.  These objectives should be SMART (Specific, Measurable, Assignable, Realistic, Time-Related) to the extent possible
