@@ -1,9 +1,0 @@
-name: shiny-persistent-data-storage
-account: mcolvin
-server: shinyapps.io
-appId: 161772
-bundleId: 737266
-url: https://mcolvin.shinyapps.io/shiny-persistent-data-storage/
-when: 1488914206.84781
-asMultiple: FALSE
-asStatic: FALSE
