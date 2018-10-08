@@ -49,6 +49,16 @@ post a comment below.
 1. [How Google's CEO Creates Brain-Friendly Presentations](PDF/oral-02.pdf) ^[http://google.com/newsstand/s/CBIwwYSZ0Tk]
 1. [How to give a good research talk](PDF/oral-03.pdf)^[https://www.microsoft.com/en-us/research/academic-program/give-great-research-talk/]
 1. [Put your take home message at the top of your slides!](PDF/oral-04.pdf)^[https://dynamicecology.wordpress.com/2018/08/27/put-your-take-home-message-at-the-top-of-your-slides/amp/]
+1. [Memorize Speeches and Presentations Easier Using This App](https://lifehacker.com/memorize-speeches-and-presentations-easier-using-this-a-1829578521)
+1. [Carpe Talk](https://www.tidyverse.org/articles/2018/07/carpe-talk/)
+1. [The Art of Slide Design by Melinda Seckington](https://speakerdeck.com/mseckington/the-art-of-slide-design)
+1. [Presenting Effectively by Kieran Healy](https://kieranhealy.org/blog/archives/2018/03/24/making-slides/)
+1. [7 Tips for Presenting Bulleted Lists in Digital Content by Hoa Loranger](https://www.nngroup.com/articles/presenting-bulleted-lists/)
+1. [How To Give a Talk by David L. Stern](http://www.howtogiveatalk.com/)
+1. [Building Your Data Science Network: Finding Community by Emily Robinson](http://hookedondata.org/Building-Your-Data-Science-Network-Finding-Community/)
+1. [Marketing for Data Science: A 7 Step ‘Go-to-Market’ Plan for Your Next Data Product by Erik Oberg](https://medium.com/indeed-data-science/marketing-for-data-science-a-7-step-go-to-market-plan-for-your-next-data-product-60c034c34d55)
+
+
 
 ### Web
 
@@ -57,7 +67,7 @@ post a comment below.
 ### Media
 
 1. [A Video is Worth a Million Words: Why You Should Make a Video about YOUR Article](PDF/media-01.pdf) ^[https://methodsblog.wordpress.com/2016/04/28/videos-about-articles/]
-
+1. [Make a trailer for your slidedeck with av](https://www.r-bloggers.com/make-a-trailer-for-your-slidedeck-with-av/)
 ### Model
 1. [Cartwright, S. J., K. M. Bowgen, C. Collop, K. Hyder, J. Nabe-Nielsen, R. Stafford, R. A. Stillman, R. B. Thorpe, and R. M. Sibly. 2016. Review: Communicating complex ecological models to non-scientist end users. Ecological Modelling 338:51-59.](PDF/C269.pdf))
 
