@@ -22,7 +22,14 @@ Website: https://mcolvin.github.io/WFA8000-Research-Credits/
 
 ## Meetings
 
-We have an open door policy and are happy to talk any time, albeit we may have our door closed to concentrate on tasks or if it is noisy in the hallway. We will set up meetings periodically.  You can schedule meetings anytime during normal business hours.  You can see MEC&#39;s schedule anytime at [http://mec685.cfr.msstate.edu/calendar.html](http://mec685.cfr.msstate.edu/calendar.html) and find a time that I am free that coincides with your schedule.
+We have an open door policy and are happy to talk any time, albeit we 
+may have our door closed to concentrate on tasks or if it is noisy in 
+the hallway. We will set up meetings periodically. You can schedule 
+meetings anytime during normal business hours. You can see MEC's 
+schedule anytime [here](http://mec685.cfr.msstate.edu/calendar.html) 
+and find a time that I am free that coincides with 
+your schedule. 
+
 
 ## Textbook and course material
 
@@ -51,63 +58,169 @@ be provided as needed on an individual basis.
 
 ## Requirements
 
-* **Protect the integrity of your data sheets and physical samples**. Data sheets and notebooks contain vital information for completing science.  Do take clear data and use comments to describe field conditions.  Once filled out, original datasheets should be photocopied and archived in a secure location.  Data should be entered from photo copies.  Original datasheets should never be modified. If you have collected physical samples make sure you have a list that includes where the samples are. Everything should be labeled carefully, with your name, date, and other information as specified for your material.
-* **Protect your data and writing**. You must have a clear, systematic back up system, at least weekly, and preferably off-site.  This may include cloud backups for data (e.g., Google Drive, Carbonite, Sugar Sync, Dropbox) or a physical system such as using a software like FreeFileSync or SynToy to sync local files to your W drive or an external drive that remains in your office or home (i.e., does not travel with your laptop).
-* **Pay attention to your email.** There are many ways of communicating. Use them to your advantage, but you must be responsible for anything sent by email and therefore you must check it regularly and respond to actionable emails in a timely fashion.  The details of an email contain clues as to whether you need to respond or not.  If the email is directly sent to you then you should probably respond with a reply or a simple acknowledgment that you received the email.  If you are listed as a courtesy copy (CC) you do not have to respond to an email, it is simply to keep you in the loop.  Use these guidelines when crafting emails and use the TO: and CC: appropriately for efficient email communication.
-* **Do semester reports.** At the beginning of each major semester (Spring Summer, Fall), we require the following:
-  1. An updated CV
-  2. Updated contact information (address, phone, email)
-  2. Classes you are taking with days and times
-  3. A reflection on what you have done since your last report
-  4. What you plan to do over the next semester with specific objectives.  These objectives should be SMART (Specific, Measurable, Assignable, Realistic, Time-Related) to the extent possible
-  5. Any actionable program needs.  This can be extra tutorials on analyses, laboratory needs, research needs (e.g., technician help, equipment repairs)
-  6. Presentations and meetings you plan to attend over the next 6 months.
-  7. Where you anticipate being in 5 years.
-
-Part 1 should be as lengthy as needed.  Parts 2-6 should be concise, 2 pages maximum (1 page is preferable) making good use of text and bullets.  This exercise provides us quick insight to how we might help you develop to meet your future goals and the ability to identify what actions we as advisors may need to take.  We will use this to assess your progress at the completion of the semester and in assigning grades.
-
-* At the end of the semester you are required to deliver a short video that provides an update of your efforts over the semester or summarizes an a part of your research. Camtasia is freely available for students from the ITS website (https://www.its.msstate.edu/support/documentation/swinstallation/). Camtasia workshops are offered periodically through the library check the library workshop calendar to find one (http://lib.msstate.edu/workshops/)  * **Let your advisors know where you are.** Let others know in advance if you are not in on any day. The group has worked well without a formal vacation policy, but this could change if there are problems.  
+* **Protect the integrity of your data sheets and physical samples**. 
+Data sheets and notebooks contain vital information for completing 
+science. Do take clear data and use comments to describe field 
+conditions. Once filled out, original datasheets should be photocopied 
+and archived in a secure location. Data should be entered from photo 
+copies. Original datasheets should never be modified. If you have 
+collected physical samples make sure you have a list that includes where 
+the samples are. Everything should be labeled carefully, with your name, 
+date, and other information as specified for your material. 
+* **Protect your data and writing**. You must have a clear, systematic 
+back up system, at least weekly, and preferably off-site. This may 
+include cloud backups for data (e.g., Google Drive, Carbonite, Sugar 
+Sync, Dropbox) or a physical system such as using a software like 
+FreeFileSync or SynToy to sync local files to your W drive or an 
+external drive that remains in your office or home (i.e., does not 
+travel with your laptop). 
+* **Pay attention to your email.** There are many ways of communicating. 
+Use them to your advantage, but you must be responsible for anything 
+sent by email and therefore you must check it regularly and respond to 
+actionable emails in a timely fashion. The details of an email contain 
+clues as to whether you need to respond or not. If the email is directly 
+sent to you then you should probably respond with a reply or a simple 
+acknowledgment that you received the email. If you are listed as a 
+courtesy copy (CC) you do not have to respond to an email, it is simply 
+to keep you in the loop. Use these guidelines when crafting emails and 
+use the TO: and CC: appropriately for efficient email communication. 
+* **Do semester reports.** At the beginning of each major semester 
+(Spring Summer, Fall), we require 2 parts:
+    1. An updated CV (should be as lengthy as needed)
+    1. Report (2 pages maximum (1 page is preferable) making good use of text and bullets) This exercise provides us quick insight to how we might help you develop to meet your future goals and the ability to identify what actions we as advisors may need to take. We will use this to assess your progress at the completion of the semester and in assigning grades.
+        1. Updated contact information (address, office location, phone, email)
+        1. Classes you are taking with days and times
+        1. A reflection on what you have done since your last report
+        1. What you plan to do over the next semester with specific objectives.  These objectives should be SMART (Specific, Measurable, Assignable, Realistic, Time-Related) to the extent possible
+        1. Any actionable program needs.  This can be extra tutorials on analyses, laboratory needs, research needs (e.g., technician help, equipment repairs)
+        1. Presentations and meetings you plan to attend over the next 6 months.
+        1. Where you anticipate being in 5 years.
+* At the end of the semester you are required to deliver a short video 
+that provides an update of your efforts over the semester or summarizes 
+an a part of your research. Camtasia is freely available for students 
+from the [ITS website](https://www.its.msstate.edu/support/documentation/swinstallation/). 
+Camtasia workshops are offered periodically through the library check 
+the library workshop calendar to find one 
+[here](http://lib.msstate.edu/workshops/) 
+* You are also required to submit 2 blog posts to be highlighted on the lab [website](https://mcolvin.github.io/).
+A template can be found [here ](https://mcolvin.github.io//post-template.docx). The post is intended
+to be short a place more emphasis on photos and other media, but they can be as long as you want.
+* **Let your advisors know where you are.** Let others know in advance if you are not in on any day. The group has worked well without a formal vacation policy, but this could change if there are problems.  
     1. **Extended time off.**  If you plan on being away from campus for an extended period that is not research related (e.g., holiday breaks) you must get approval from us prior to departing, once you receive oral approval send your advisor(s) an email with your last day in the office and when you will be back in the office.
     2. **Emergencies.**  We recognize that there are emergency situations requiring quick response like deaths or illnesses in the family.  Please respond to those as needed and let us know when you can.
     3. **Illness.** If you are sick do not come to work, simply let us know you will not be in due to sickness.
-    4. **Working from home or other location.**  In general we discourage &#39;working from home&#39; as it limits the synergistic efforts of the group.  However we recognize that working from home or other location may be advantageous due to office noise or you need to be home due life balance.  If you are working from home simply send an email specifying that you are working from home or another location to your advisor(s).
+    4. **Working from home or other location.**  In general we discourage "working from home" as it limits the synergistic efforts of the group.  However we recognize that working from home or other location may be advantageous due to office noise or you need to be home due life balance.  If you are working from home simply send an email specifying that you are working from home or another location to your advisor(s).
     5. **Field work.**  Do let your advisor(s) know when you are heading out in the field and when you safely return.  This will vary among advisor so you can work this out with them on an individual basis.
 * Make sure that anyone you are mentoring is practicing good science and following all the rules and guidelines.
 * If there is a problem of any kind, or something you do not know or understand, let one of us know. We are committed to making our laboratories an excellent place for learning and discovery.
+* Class attendance is mandatory. Your project pays for you to take classes. Unexcused absences are 
+
 
 
 ## Guidelines
 
-* **Read the literature.** You need to stay up to date with what is going on. Subscribe to tables of contents. Set up alerts on Google Scholar for topics that interest you, kin selection, endosymbiosis, Dictyostelium, Burkholderia, people&#39;s names, or whatever you like. Read the abstracts as they come in and read a paper or more every day.
-* **Design careful experiments, observational studies, and analyses.** Consider alternative hypotheses. Run power analyses on dummy datasets. Do all the right controls. &quot;To call in the statistician after the experiment is done may be no more than asking him to perform a post-mortem examination: he may be able to say what the experiment died of.&quot; Ronald Fisher.
-* **Visualize your hypotheses and your results effectively.** Become a master of clear figures, appropriate to the data and show distributions.
-* **Develop a workflow management system.**  It is difficult to manage the increasing number of assignments, meetings, and other work requirements vying for your time.  A workflow management system helps keep things from falling through the cracks and missed deadlines.  This can be a simple a using a calendar or a notebook.  I use a notebook with a simple &#39;bullet system&#39; to keep track of things.  There are many digital ways to manage workflow like google keep, Wunderlist, Todoist, Evernote, and so on.  In my experience this is really a personal preference and may take several attempts to find one that works for you.
-* **Develop a uniform file architecture for your projects and analyses**.  Having a uniform file architecture helps immensely when you are working on several research projects (thesis chapters can be thought of as separate projects) and returning to a project post peer review.
-* **Write your papers as soon as possible.** Getting your work done and out there is essential. The best plan is to write at least once a week, ideally every day. Write an introduction and methods before you begin and modify them as you go along.
-* **Write up methods and protocols as you do them and share.** This is particularly important for undergrads and people new to the group, and will help with ultimate paper writing.
-* **Accept mentoring and be a mentor and teacher.** We all have a lot to learn and can do this by helping others and learning ourselves. Mentoring a student is a responsibility. Keep careful track of your students and ask us for mentoring advice.
-* **Ask questions all the time!** Remember the Star Trek quote: &quot;I respect an officer who is prepared to admit ignorance and ask a question, rather than one who, out of pride, will blunder blindly forward&quot; -Capt. Jean-Luc Picard
-* **Be helpful.** You might know something that could be helpful to someone else that you realize before they do. Take the initiative and talk to them. Science is not a zero-sum game. Careers might be zero-sum because there are only so many positions. But even that is not a competition against your labmates. It&#39;s a competition against everyone and one of the best ways to compete is cooperative collaboration with your labmates.
-* **Learn new things.** Take MOOCs, continuing education courses, talk to other lab members and learn specific things all the time, whether they be techniques, approaches, or something else, planning active learning is always good.
-* **Address authorship issues early.** Authorship in a collaborative lab group can be challenging. You should ideally be first author on work you lead and write. There can be ties and they should be discussed and resolved in ways fair to all. When in doubt, include someone as an author. Advisor(s) have final say on all authorship issues.
-* **Talk to people outside our research group.** There are people outside our group who know things we do not know and they can help.
-* **Apply for funding.** There are funding opportunities available for all levels of researchers from undergrad to postdoc. Apply for funding whenever possible. Be sure to workshop any proposals with the group and to give them to advisor(s) with plenty of time for review. Grad students can apply for DDIG, NRSA, GRFP and others. Postdocs can apply for NRSA and sometimes for NSF or LSRF and others. There is also Sigma Xi and other university programs.
+* **Read the literature.** You need to stay up to date with what is 
+going on. Subscribe to tables of contents. Set up alerts on Google 
+Scholar for topics that interest you, kin selection, endosymbiosis, 
+Dictyostelium, Burkholderia, people&#39;s names, or whatever you like. 
+Read the abstracts as they come in and read a paper or more every day. 
+* **Design careful experiments, observational studies, and analyses.** 
+Consider alternative hypotheses. Run power analyses on dummy datasets. 
+Do all the right controls. &quot;To call in the statistician after the 
+experiment is done may be no more than asking him to perform a 
+post-mortem examination: he may be able to say what the experiment died 
+of.&quot; Ronald Fisher. 
+* **Visualize your hypotheses and your results effectively.** Become a 
+master of clear figures, appropriate to the data and show distributions. 
+* **Develop a workflow management system.** It is difficult to manage 
+the increasing number of assignments, meetings, and other work 
+requirements vying for your time. A workflow management system helps 
+keep things from falling through the cracks and missed deadlines. This 
+can be a simple a using a calendar or a notebook. I use a notebook with 
+a simple [bullet system](https://bulletjournal.com/) to keep track of things. There are many 
+digital ways to manage workflow like google keep, Wunderlist, Todoist, 
+Evernote, and so on. In my experience this is really a personal 
+preference and may take several attempts to find one that works for you. 
+* **Develop a uniform file architecture for your projects and 
+analyses**. Having a uniform file architecture helps immensely when you 
+are working on several research projects (thesis chapters can be thought 
+of as separate projects) and returning to a project post peer review. 
+* **Write your papers as soon as possible.** Getting your work done and 
+out there is essential. The best plan is to write at least once a week, 
+ideally every day. Write an introduction and methods before you begin 
+and modify them as you go along. 
+* **Write up methods and protocols as you do them and share.** This is 
+particularly important for undergrads and people new to the group, and 
+will help with ultimate paper writing. 
+* **Accept mentoring and be a mentor and teacher.** We all have a lot to 
+learn and can do this by helping others and learning ourselves. 
+Mentoring a student is a responsibility. Keep careful track of your 
+students and ask us for mentoring advice. 
+* **Ask questions all the time!** Remember the Star Trek quote: "I 
+respect an officer who is prepared to admit ignorance and ask a 
+question, rather than one who, out of pride, will blunder blindly 
+forward" -Capt. Jean-Luc Picard 
+* **Be helpful.** You might know something that could be helpful to 
+someone else that you realize before they do. Take the initiative and 
+talk to them. Science is not a zero-sum game. Careers might be zero-sum 
+because there are only so many positions. But even that is not a 
+competition against your labmates. It's a competition against 
+everyone and one of the best ways to compete is cooperative 
+collaboration with your labmates. 
+* **Learn new things.** Take MOOCs, continuing education courses, talk 
+to other lab members and learn specific things all the time, whether 
+they be techniques, approaches, or something else, planning active 
+learning is always good. 
+* **Address authorship issues early.** Authorship in a collaborative lab 
+group can be challenging. You should ideally be first author on work you 
+lead and write. There can be ties and they should be discussed and 
+resolved in ways fair to all. When in doubt, include someone as an 
+author. Advisor(s) have final say on all authorship issues. 
+* **Talk to people outside our research group.** There are people 
+outside our group who know things we do not know and they can help. 
+* **Apply for funding.** There are funding opportunities available for 
+all levels of researchers from undergrad to postdoc. Apply for funding 
+whenever possible. Be sure to workshop any proposals with the group and 
+to give them to advisor(s) with plenty of time for review. Grad students 
+can apply for DDIG, NRSA, GRFP and others. Postdocs can apply for NRSA 
+and sometimes for NSF or LSRF and others. There is also Sigma Xi and 
+other university programs. 
+
 
 
 ## Rules
 
 * Be safe at all times and dress safely.
-* Notify your supervisor of safe return from the field.  If you have technicians in the field be sure that they report when they will be in the field and when they safely return to a supervisor, either the graduate student in charge of the project or one of the Principle investigators.
-* Stay up to date on institutional training.  This may include USGS training to use Coop Unit equipment.
+* Notify your supervisor of safe return from the field. If you have 
+technicians in the field be sure that they report when they will be in 
+the field and when they safely return to a supervisor, either the 
+graduate student in charge of the project or one of the Principle 
+investigators. 
+* Stay up to date on institutional training. This may include USGS 
+training to use Coop Unit equipment. 
 * Read equipment manuals and MSDS.
 * Do not eat or drink in the lab.
-* Help others to stay safe by telling anyone immediately if they are doing something unsafe.
+* Help others to stay safe by telling anyone immediately if they are 
+doing something unsafe. 
 * Report any safety issue, large or small.
-* Treat everyone with respect. A friendly laboratory atmosphere is essential for productive, fun research. There are no stupid questions and everyone is deserving of support and help.
-* Benefit from the synergy of working when other people are in the group. We do not want to tell you exactly what your hours should be, but they should overlap with normal business hours daily because cooperation and collaboration are facilitated in this way. If there are problems we will give you more specific instructions.
-* Clean up after yourself and leave all areas neat and clean. It is very important when working in shared areas that you do not leave a mess anywhere. Areas of particular concern are the balances, the gel rig areas and other common areas. Everything should be labeled with your name and date.
-* Help other students with field work and analyses.  Helping fellow graduate students with field work and analyses is a great way to gather additional experience, build a network, and synergistic activity.  However do not become a free technician, your research comes first.
-
+* Treat everyone with respect. A friendly laboratory atmosphere is 
+essential for productive, fun research. There are no stupid questions 
+and everyone is deserving of support and help. 
+* Benefit from the synergy of working when other people are in the 
+group. We do not want to tell you exactly what your hours should be, but 
+they should overlap with normal business hours daily because cooperation 
+and collaboration are facilitated in this way. If there are problems we 
+will give you more specific instructions. 
+* Clean up after yourself and leave all areas neat and clean. It is very 
+important when working in shared areas that you do not leave a mess 
+anywhere. Areas of particular concern are the balances, the gel rig 
+areas and other common areas. Everything should be labeled with your 
+name and date. 
+* Help other students with field work and analyses. Helping fellow 
+graduate students with field work and analyses is a great way to gather 
+additional experience, build a network, and synergistic activity. 
+However do not become a free technician, your research comes first. 
+* Sign out lab vehicles
 
 ## Side projects
 
