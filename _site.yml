@@ -22,7 +22,7 @@ navbar:
       href: https://www.flickr.com/photos/144574814@N07/ 
     - text: "Email"
       icon: fa-envelope-o
-      href: mailto:michael.colvin@msstate.edu?Subject=WFA4313
+      href: mailto:michael.colvin@msstate.edu?Subject=WFA8000
 output_dir: "docs"
 output:
   html_document:
