@@ -68,7 +68,9 @@ post a comment below.
 
 1. [A Video is Worth a Million Words: Why You Should Make a Video about YOUR Article](PDF/media-01.pdf) ^[https://methodsblog.wordpress.com/2016/04/28/videos-about-articles/]
 1. [Make a trailer for your slidedeck with av](https://www.r-bloggers.com/make-a-trailer-for-your-slidedeck-with-av/)
+
 ### Model
+
 1. [Cartwright, S. J., K. M. Bowgen, C. Collop, K. Hyder, J. Nabe-Nielsen, R. Stafford, R. A. Stillman, R. B. Thorpe, and R. M. Sibly. 2016. Review: Communicating complex ecological models to non-scientist end users. Ecological Modelling 338:51-59.](PDF/C269.pdf))
 
 ## Networking and meetings
@@ -86,6 +88,8 @@ goals](pdf/long-term-goals.pdf) ^[http://alifeofproductivity.com/a-simple-trick-
 ## Mentoring
 
 1. [My strategies for mentoring undergraduate researchers](PDF/mentoring-01.pdf)^[https://dynamicecology.wordpress.com/2018/08/28/my-strategies-for-mentoring-undergraduate-researchers/]
+
+
 ## Field Sampling 
 
 * [Better Safe than Sorry: Planning for Safe and Successful Fieldwork](PDF/field-01.pdf)
