@@ -58,6 +58,7 @@ post a comment below.
 1. [Building Your Data Science Network: Finding Community by Emily Robinson](http://hookedondata.org/Building-Your-Data-Science-Network-Finding-Community/)
 1. [Marketing for Data Science: A 7 Step ‘Go-to-Market’ Plan for Your Next Data Product by Erik Oberg](https://medium.com/indeed-data-science/marketing-for-data-science-a-7-step-go-to-market-plan-for-your-next-data-product-60c034c34d55)
 1. [Top tips for giving an engaging talk](PDF/d41586-019-01041-9.pdf)^[https://www.nature.com/articles/d41586-019-01041-9]
+1. [Preparing the Thesis Proposal Defense](PDF/Preparing-the-Thesis-Proposal-Defense.pdf)^[http://www.insidehighered.com/print/blogs/gradhacker/preparing-thesis-proposal-defense]
 
 
 
