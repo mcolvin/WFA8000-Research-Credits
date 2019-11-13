@@ -58,7 +58,7 @@ post a comment below.
 1. [Building Your Data Science Network: Finding Community by Emily Robinson](http://hookedondata.org/Building-Your-Data-Science-Network-Finding-Community/)
 1. [Marketing for Data Science: A 7 Step ‘Go-to-Market’ Plan for Your Next Data Product by Erik Oberg](https://medium.com/indeed-data-science/marketing-for-data-science-a-7-step-go-to-market-plan-for-your-next-data-product-60c034c34d55)
 1. [Top tips for giving an engaging talk](PDF/d41586-019-01041-9.pdf)^[https://www.nature.com/articles/d41586-019-01041-9]
-1. [Preparing the Thesis Proposal Defense](PDF/Preparing-the-Thesis-Proposal-Defense.pdf)^[http://www.insidehighered.com/print/blogs/gradhacker/preparing-thesis-proposal-defense]
+mc1. [Preparing the Thesis Proposal Defense](PDF/Preparing-the-Thesis-Proposal-Defense.pdf)^[http://www.insidehighered.com/print/blogs/gradhacker/preparing-thesis-proposal-defense]
 
 
 
@@ -75,7 +75,7 @@ post a comment below.
 
 1. [Cartwright, S. J., K. M. Bowgen, C. Collop, K. Hyder, J. Nabe-Nielsen, R. Stafford, R. A. Stillman, R. B. Thorpe, and R. M. Sibly. 2016. Review: Communicating complex ecological models to non-scientist end users. Ecological Modelling 338:51-59.](PDF/C269.pdf))
 1. [THe "Rmd first" method: when projects start with documentation](PDF/rtask.thinkr.fr-en The R Task Force.pdf)
-
+1. [Supercharge your research: a ten-week plan for open data science](PDF/nature.com-Supercharge your research a ten-week plan for open data science.pdf)^[https://www.nature.com/articles/d41586-019-03335-4]
 
 ## Networking and meetings
 
