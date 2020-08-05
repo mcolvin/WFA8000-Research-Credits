@@ -42,6 +42,7 @@ post a comment below.
 1. [How to Write a Publishable Paper as a Class Project](PDF/write-11.pdf)^[https://gking.harvard.edu/papers]
 1. [Advice on Research and Writing: A collection of advice about how to do research and how to communicate effectively (primarily for computer scientists).](http://www.cs.cmu.edu/afs/cs.cmu.edu/user/mleone/web/how-to.html)
 1. [Rough drafts, getting words on the page, and the pain – and pleasure – of writing](https://dynamicecology.wordpress.com/2018/06/04/rough-drafts-getting-words-on-the-page-and-the-pain-and-pleasure-of-writing/amp/)
+1. [Working Scientist podcast: How to write a top-notch paper](https://www.nature.com/articles/d41586-020-00292-1)
 
 ### Oral
 
@@ -97,7 +98,7 @@ goals](pdf/long-term-goals.pdf) ^[http://alifeofproductivity.com/a-simple-trick-
 ## Mentoring
 
 1. [My strategies for mentoring undergraduate researchers](PDF/mentoring-01.pdf)^[https://dynamicecology.wordpress.com/2018/08/28/my-strategies-for-mentoring-undergraduate-researchers/]
-
+1. [Some modest and practical advice for undergraduate researchers](PDF/ugrad-advice.pdf)^[https://esajournals.onlinelibrary.wiley.com/doi/full/10.1002/bes2.1745]
 
 ## Field Sampling 
 
