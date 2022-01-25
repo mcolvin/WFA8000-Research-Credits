@@ -8,8 +8,7 @@ output:
 ---
 <!--
 library(knitr)
-rmarkdown::render_site("syllabus.Rmd")# build website
-rmarkdown::render_site()# build website
+rmarkdown::render("syllabus.Rmd")# build website
 -->
 
 
@@ -280,13 +279,6 @@ titleix@msstate.edu. Additional resources are available at:
 * [http://students.msstate.edu/sexualmisconduct/](http://students.msstate.edu/sexualmisconduct/)
 
 
-## License
-
-This portion is modified from 
-[https://sociobiology.wordpress.com/2016/07/28/do-you-have-a-lab-philoso 
-phy/](https://sociobiology.wordpress.com/2016/07/28/do-you-have-a-lab-ph 
-ilosophy/) under Creative Commons 4.0 use, modify, with attribution and 
-maintaining sharing. 
 
 
 <p style="page-break-after:always;"> </p>
